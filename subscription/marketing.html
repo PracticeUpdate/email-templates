@@ -5,22 +5,37 @@
 <title></title>
 <style>
 <!-- @stylesheet base -->
+<!-- @stylesheet marketing -->
+
 @media (max-width: 600px) {
-	.pc {display:none;}
+	.pc {display:block;}
 	.mobile{display:table;}
 	.message-header .message-layout {text-align:center;}	
 	.message-type,
 	.brand-message-type	{text-align: center;}
 	.mobile .module-hero {text-align: center;}	
-	.module-hero td img {margin: 19px 15px 5px 17px;}
 	.module-hero td {padding:0 8px 14px;}
 	.color-block .module-hero td {padding:0;}
 	.three-blocks {width:100%; margin:0; text-align:center;}
 	.three-blocks p{text-align:center;margin:0 0 10px;}
 	.message-content-block {width:100%;}
 	.message-content-block .button-link {width:100%; padding:15px 0 14px;}
-	.message-content-block .button-link.width-auto {width:auto; padding: 15px 42px 14px;}
+	.message-content-block .button-link.width-auto {width:auto; padding: 15px 42px 14px;}	
+	.message-container tbody .message-body-content.message-layout .message-content-block td {
+		padding: 0 !important;
+	}
+	.message-content-block {
+		width:auto;
+	}
+	.message-container tbody .message-body-content.message-layout .message-content-block .button-link{
+		width:auto;
+	}	
+	.message-container tbody .message-body-content.message-layout .message-content-block p.advertsement-title,
+	.message-container tbody .message-body-content.message-layout .message-content-block .advertsement-body	{
+		width: auto;
+	}
 }
+
 </style>
 </head>
 <body>
@@ -30,11 +45,11 @@
           <td>
             <table class="message-layout pc">
 				<tr>
-				  <td class="brand-logo" style="padding: 15px 0 10px;"><img src="<!-- @path logo.png -->" width="221px" height="49px" alt="Elsevier Logo"></td>
-				  <td class="brand-message-type" style="padding: 17px 0 10px;" align="right" valign="bottom"><span class="message-type">Specific newsletter <br>and we need to say more</span></td>
+				  <td class="brand-logo"><img src="<!-- @path logo.png -->" width="221px" height="49px" alt="Elsevier Logo"></td>
+				  <td class="brand-message-type" align="right" valign="bottom"><span class="message-type">Specific newsletter <br>and we need to say more</span></td>
 				</tr>
             </table><!--/.message-container-->
-			<table class="message-layout mobile" style="display: none;">
+			<table class="message-layout mobile">
 				<tr><td class="brand-logo"><img src="<!-- @path logo.png -->" width="211px" height="49px" alt="Elsevier Logo"></td></tr>
 				<tr><td class="brand-message-type" align="right" valign="bottom"><span class="message-type">Specific newsletter <br>and we need to say more</span></td></tr>
             </table><!--/.message-container-->
@@ -45,17 +60,17 @@
             <table class="message-layout">
               <tbody>
                 <tr>
-                  <td><h1 style="font-family: 'Lucida Sans Unicode';margin: 33px 0 2px;">PLACE FOR TITLE RIGHT HERE!</h1></td>
+                  <td><h1>PLACE FOR TITLE RIGHT HERE!</h1></td>
                 </tr>
                 <tr>
-                  <td><h2 style="margin: 0 0 24px;">HERE IS A SUB HEADLINE TITLE</h2></td>
+                  <td><h2>HERE IS A SUB HEADLINE TITLE</h2></td>
                 </tr>
               </tbody>
             </table><!--/.message-layout-->
           </td>
         </tr><!--/.message-banner-->
         <tr class="message-banner-border">
-          <td style="display: block; height: 10px;"></td>
+          <td></td>
         </tr>
 		<tr class="message-banner-shadow">
           <td></td>
@@ -65,7 +80,7 @@
 
         <tr class="message-body">
           <td>
-            <table class="message-layout message-body-content" style="background-color: #FFFFFF; border: 1px solid #F2F3F3; margin-top: 7px;">
+            <table class="message-layout message-body-content">
               <tbody>
                 <tr>
                   <td>
@@ -75,11 +90,11 @@
                           <table class="module-hero" cellspacing="0">
                             <tr>
                               <td valign="top">
-                                <img src="http://placehold.it/80x80" style="margin: 19px 15px 14px 17px;" width="80px" height="80px" alt="">
+                                <img src="http://placehold.it/80x80" width="80px" height="80px" alt="">
                               </td>
                               <td>
-								<h3 class="hero-title" style="text-transform: none; font-size: 22px;font-weight: bold;padding: 13px 30px 10px 0;">Doctor Name, M.D. and the message that he would like to state.</h3>
-								<a class="button" style="float: right; margin: 2px 18px 14px 0;">Accept Invitation</a>
+								<h3 class="hero-title" >Doctor Name, M.D. and the message that he would like to state.</h3>
+								<a class="button" >Accept Invitation</a>
                               </td>
                             </tr>
                           </table>
@@ -96,12 +111,12 @@
                           <table class="module-hero" cellspacing="0">
                             <tr>
                               <td valign="top">
-                                <img src="http://placehold.it/80x80" style="margin: 19px 15px 14px 17px;" width="80px" height="80px">
+                                <img src="http://placehold.it/80x80" width="80px" height="80px">
                               </td>
                               <td>
-								<h3 class="hero-title" style="text-transform: none; font-size: 22px;font-weight: bold;padding: 13px 30px 10px 0;">Doctor Name, M.D. and the message that he would like to state.</h3>
+								<h3 class="hero-title">Doctor Name, M.D. and the message that he would like to state.</h3>
 								<p>Phosfluorescently aggregate enabled methods of empowerment rather than optimal web services. Phosfluorescently maintain multidisciplinary intellectual capital and backend methods of empowerment. Dramatically fabricate cross-unit methodologies vis-a-vis cost effective experiences.</p>
-								<a class="button" style="float: right; margin: 2px 18px 14px 0;">Accept Invitation</a>
+								<a class="button">Accept Invitation</a>
                               </td>
                             </tr>
                           </table>
@@ -118,17 +133,17 @@
                           <table class="module-hero" cellspacing="0">
                             <tr>
                               <td valign="top">
-                                <img src="http://placehold.it/80x80" style="margin: 19px 15px 14px 17px;" width="80px" height="80px" alt="">
+                                <img src="http://placehold.it/80x80" width="80px" height="80px" alt="">
                               </td>
                               <td>
-								<h3 class="hero-title" style="text-transform: none; font-size: 22px;font-weight: bold;padding: 13px 30px 10px 0;">Doctor Name, M.D. and the message that he would like to state.</h3>								
+								<h3 class="hero-title" >Doctor Name, M.D. and the message that he would like to state.</h3>								
 								<ul>
 									<li>List Item One Is Stated Here</li>
 									<li>List Item Two</li>
 									<li>List Item Three Is Stated Here</li>
 									<li> List Item Four</li>
 								</ul>
-								<a class="button" style="float: right; margin: 2px 18px 14px 0;">Accept Invitation</a>
+								<a class="button">Accept Invitation</a>
                               </td>
                             </tr>
                           </table>
@@ -145,10 +160,10 @@
                           <table class="module-hero" cellspacing="0">
                             <tr>
                               <td valign="top">
-                                <img src="http://placehold.it/80x80" style="margin: 19px 15px 14px 17px;" width="80px" height="80px" alt="">
+                                <img src="http://placehold.it/80x80"width="80px" height="80px" alt="">
                               </td>
                               <td>
-								<h3 class="hero-title" style="text-transform: none; font-size: 22px;font-weight: bold;padding: 13px 30px 10px 0;">Doctor Name, M.D. and the message that he would like to state.</h3>								
+								<h3 class="hero-title">Doctor Name, M.D. and the message that he would like to state.</h3>								
 								<p>Phosfluorescently aggregate enabled methods of empowerment rather than optimal web services. Phosfluorescently maintain multidisciplinary intellectual capital and backend methods of empowerment. Dramatically fabricate cross-unit methodologies vis-a-vis cost effective experiences.</p>
 								<ul>
 									<li>List Item One Is Stated Here</li>
@@ -156,7 +171,7 @@
 									<li>List Item Three Is Stated Here</li>
 									<li> List Item Four</li>
 								</ul>
-								<a class="button" style="float: right; margin: 2px 18px 14px 0;">Accept Invitation</a>
+								<a class="button">Accept Invitation</a>
                               </td>
                             </tr>
                           </table>
@@ -172,7 +187,7 @@
 								<td>
 									<p>Dear Name,</p>
 									<p>Phosfluorescently aggregate enabled methods of empowerment rather than optimal web services. Phosfluorescently maintain multidisciplinary intellectual capital and backend methods of empowerment. Dramatically <a href="#">this is a link</a> cross-unit methodolo gies vis-a-vis cost effective experiences.</p>
-									<img src="http://placehold.it/540x150" style="margin:0" width="540px" height="150px" alt="">
+									<img src="http://placehold.it/540x150" width="100%" height="150px" alt="">
 									<h3 class="section-title">Here is a Title for a Section of Information</h3>
 									<ul>
 										<li>List Item One Is Stated Here</li>
@@ -181,17 +196,17 @@
 										<li> List Item Four</li>
 									</ul>
 									<p>Phosfluorescently aggregate enabled methods of empowerment rather than optimal web services. Phosfluorescently maintain multidisciplinary intellectual capital and backend methods of empowerment. Dramatically cross-unit methodolo gies vis-a-vis cost effective experiences.</p>
-									<img class="alignleft" style="float: left; margin: 0 20px 0 0;" src="http://placehold.it/170x130" width="170px" height="130px" alt="">
+									<img class="alignleft" width="170px" height="130px" alt="">
 									<h3 class="section-title">Here is a Title Area</h3>
 									<p>Phosfluorescently aggregate enabled methods of empowerment rather than optimal web services. Phosfluorescently maintain multidisciplinary intellectual capital and backend methods of empowerment. Dramatically cross-unit methodolo gies vis-a-vis cost effective experiences. Phosfluorescently aggregate enabled methods of empowerment rather than optimal web services. Phosfluorescently maintain multidisciplinary intellectual capital and backend methods of empowerment. Dramatically fabricate cross-effective experiences.</p>
 									<h3 class="section-title">Here is a Title for a Section of Information</h3>
-									<ul class="alignright-list" style="float: left;width: 46%;">
+									<ul class="alignright-list" >
 										<li>List Item One Is Stated Here</li>
 										<li>List Item Two</li>
 										<li>List Item Three Is Stated Here</li>
 										<li> List Item Four</li>
 									</ul>
-									<ul class="alignright-list" style="float: left;width: 46%;">
+									<ul class="alignright-list">
 										<li>List Item One Is Stated Here</li>
 										<li>List Item Two</li>
 										<li>List Item Three Is Stated Here</li>
@@ -210,14 +225,14 @@
 									<p>Text area for a featured topic or special point of discussion</p>
 								</td>
 								<td align="center">
-									<p class="three-blocks-text" style="padding: 0 10px 14px;">Text area for a featured topic or special point of discussion</p>
+									<p class="three-blocks-text">Text area for a featured topic or special point of discussion</p>
 								</td>
 								<td align="center">
 									<p>Text area for a featured topic or special point of discussion</p>
 								</td>
 							</tr>
 						</table><!--/.message-content-block-->
-						<table class="message-content-block three-blocks mobile" style="display: none;">
+						<table class="message-content-block three-blocks mobile">
 							<tr>
 								<td align="center">
 									<p>Text area for a featured topic or special point of discussion</p>
@@ -225,7 +240,7 @@
 							</tr>
 							<tr>
 								<td align="center">
-									<p class="three-blocks-text" style="padding: 0 10px 14px;">Text area for a featured topic or special point of discussion</p>
+									<p class="three-blocks-text">Text area for a featured topic or special point of discussion</p>
 								</td>
 							</tr>
 							<tr>
@@ -241,14 +256,14 @@
 						<table class="message-content-block pc">
 							<tr>
 								<td>
-									<a href="" class="button-link" style="background: #d5644f;text-decoration: none;font-size: 24px;text-transform: uppercase;color: #fff;font-family: 'Lucida Sans Unicode';width: 458px;text-align: center;float: left;line-height: 18px;padding: 15px 42px 14px;">LARGE CALL TO ACTION BUTTON!</a>
+									<a href="" class="button-link">LARGE CALL TO ACTION BUTTON!</a>
 								</td>
 							</tr>
 						</table><!--/.message-content-block-->
-						<table class="message-content-block mobile no-margin" style="display: none; margin:0;">
+						<table class="message-content-block mobile no-margin">
 							<tr>
 								<td>
-									<a href="" class="button-link" style="background: #d5644f;text-decoration: none;font-size: 24px;text-transform: uppercase;color: #fff;font-family: 'Lucida Sans Unicode';width: 458px;text-align: center;float: left;line-height: 18px;padding: 15px 42px 14px;">LARGE CALL TO ACTION BUTTON!</a>
+									<a href="" class="button-link" >LARGE CALL TO ACTION BUTTON!</a>
 								</td>
 							</tr>
 						</table><!--/.message-content-block-->
@@ -259,8 +274,8 @@
 						<table class="message-content-block">
 							<tr>
 								<td>
-									<p class="click-here-text" style="float: left;font-weight: bold;color: #167999;font-size: 20px;font-style: italic;font-family: Arial;width: 315px;text-align: right;margin: 0 6px 0 0;">Call To Action Here That Might Take Up Two Lines!</p>
-									<a href="" class="button-link width-auto" style="background: #d5644f;text-decoration: none;font-size: 24px;text-transform: uppercase;color: #fff;font-family: 'Lucida Sans Unicode';width: auto;text-align: center;float: right;line-height: 18px;padding: 15px 42px 14px;">click here</a>
+									<p class="click-here-text" >Call To Action Here That Might Take Up Two Lines!</p>
+									<a href="" class="button-link width-auto">click here</a>
 								</td>
 							</tr>
 						</table><!--/.message-content-block-->
@@ -268,12 +283,12 @@
                 </tr>
 				<tr>
 					<td>
-						<table class="message-content-block no-margin" style=" margin:0;">
+						<table class="message-content-block no-margin">
 							<tr>
 								<td>
 									<div class="advertsement-img">
-										<p style="width:570px; font-size:8px; background:#aca198; font-family:'Lucida Sans Unicode'; color:#fff; text-transform:uppercase; padding:0 0 0 12px;">advertsement</p>
-										<img src="http://placehold.it/582x72" width="582px" height="72px" alt="">
+										<p class="advertsement-title">advertsement</p>
+										<img src="http://placehold.it/582x72" width="100%" alt="">
 									</div>
 								</td>
 							</tr>
@@ -282,12 +297,12 @@
                 </tr>
 				<tr>
 					<td>
-						<table class="message-content-block no-margin" style=" margin:0;">
+						<table class="message-content-block no-margin">
 							<tr>
 								<td>
-									<div class="advertsement-text" style="border: 1px solid #ACA198;background: #f1f1f2;width: 580px;">
-										<p style="width:570px; font-size:8px; background:#aca198; font-family:'Lucida Sans Unicode'; color:#fff; text-transform:uppercase; padding:0 0 0 12px;">advertsement</p>
-										<p style="padding: 10px;">Text only Ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. <a href="">Aliquam</a>  erat volutpat. Nulla libero lectus.  erat volutpat. Nulla libero lectus.  erat volutpat. Nulla libero lectus. </p>
+									<div class="advertsement-body">
+										<p class="advertsement-title">advertsement</p>
+										<p class="advertsement-text">Text only Ad. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. <a href="">Aliquam</a>  erat volutpat. Nulla libero lectus.  erat volutpat. Nulla libero lectus.  erat volutpat. Nulla libero lectus. </p>
 									</div>
 								</td>
 							</tr>
@@ -300,9 +315,9 @@
 							<tr>
 								<td>
 									<p>Thank you,</p>
-									<p class="no-padding" style="padding: 0;">Doctor Name, M.D.</p>
-									<p class="no-padding" style="padding: 0;">Editor-in-Chief</p>
-									<p class="no-padding" style="padding: 0;">PracticeUpdate</p>
+									<p class="no-padding">Doctor Name, M.D.</p>
+									<p class="no-padding">Editor-in-Chief</p>
+									<p class="no-padding">PracticeUpdate</p>
 								</td>
 							</tr>
 						</table><!--/.message-content-block-->
