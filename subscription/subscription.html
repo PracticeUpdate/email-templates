@@ -5,20 +5,8 @@
 <meta name="viewport" content="width=device-width">
 <title></title>
 <style>
-<!-- @stylesheet base -->
-@media (max-width: 600px) {
-	.pc {display:none;}
-	.mobile{display:table;}
-	.message-header .message-layout {text-align:center;}	
-	.message-type,
-	.brand-message-type	{text-align: center;}
-	.mobile .module-hero {text-align: center;}	
-	.hero-title {padding: 0;}
-	.module-hero td img {margin: 19px 15px 5px 17px;}
-	.module-hero td {padding:0 0 14px;}
-	.module-hero td p{padding:0 8px;}
-	.color-block .module-hero td {padding:0;}
-}
+	<!-- @stylesheet base -->
+	<!-- @stylesheet subscription -->
 </style>
 </head>
 <body>
@@ -28,11 +16,11 @@
           <td>
             <table class="message-layout pc">
 				<tr>
-				  <td class="brand-logo" style="padding: 15px 0 10px;"><img src="<!-- @path logo.png -->" width="221px" height="49px" alt="PracticeUpdate logo"></td>
-				  <td class="brand-message-type" style="padding: 17px 0 10px;" align="right" valign="bottom"><span class="message-type">Specific newsletter <br>and we need to say more</span></td>
+				  <td class="brand-logo"><img src="<!-- @path logo.png -->" width="221px" height="49px" alt="PracticeUpdate logo"></td>
+				  <td class="brand-message-type" align="right" valign="bottom"><span class="message-type">Specific newsletter <br>and we need to say more</span></td>
 				</tr>
             </table><!--/.message-container-->
-			<table class="message-layout mobile" style="display: none;">
+			<table class="message-layout mobile">
 				<tr><td class="brand-logo"><img src="<!-- @path logo.png -->" width="211px" height="49px" alt="PracticeUpdate logo"></td></tr>
 				<tr><td class="brand-message-type" align="right" valign="bottom"><span class="message-type">Specific newsletter <br>and we need to say more</span></td></tr>
             </table><!--/.message-container-->
@@ -43,18 +31,15 @@
             <table class="message-layout">
               <tbody>
                 <tr>
-                  <td><h1 style="font-family: 'Lucida Sans Unicode';margin: 33px 0 2px;">PLACE FOR TITLE RIGHT HERE!</h1></td>
+                  <td><h1>PLACE FOR TITLE RIGHT HERE!</h1></td>
                 </tr>
                 <tr>
-                  <td><h2 style="margin: 0 0 24px;">HERE IS A SUB HEADLINE TITLE</h2></td>
+                  <td><h2>HERE IS A SUB HEADLINE TITLE</h2></td>
                 </tr>
               </tbody>
             </table><!--/.message-layout-->
           </td>
         </tr><!--/.message-banner-->
-        <tr class="message-banner-border">
-          <td style="display: block; height: 10px;"></td>
-        </tr>
       </thead>
       <tbody>
 
@@ -64,18 +49,18 @@
               <tbody>
                 <tr class="pc">
                   <td>
-                    <table class="message-content-block" style="margin:20px 20px 36px;">
+                    <table class="message-content-block">
                       <tr>
-                        <td style="background:none;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: #e6e7e8;">
-                                <img src="http://placehold.it/123x88" width="123px" height="88px" style="margin: 19px 15px 12px 17px;" alt="">
+                              <td valign="top">
+                                <img src="http://placehold.it/123x88" width="123px" height="88px" alt="">
                               </td>
-                              <td style="background: #e6e7e8; padding: 15px 0 0; vertical-align: top;">
-								<h3 class="hero-title" style="text-transform: capitalize; font-weight:bold;">Editorial Board</h3>
+                              <td>
+								<h3 class="hero-title">Editorial Board</h3>
 								<p>Our Physician editors collaborate weekly to bring you this informative newletter. Learn more about them</p>
-								<a class="button" style="float: right; margin: 0 18px 0 0; padding: 6px 31px;">learn more</a>
+								<a class="button">learn more</a>
                               </td>
                             </tr>
                           </table>
@@ -84,14 +69,14 @@
                     </table><!--/.message-content-block-->
                   </td>
                 </tr>
-				<tr class="mobile" style="display: none;">
+				<tr class="mobile">
                   <td>
                     <table class="message-content-block">
                       <tr>
                         <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background:none;">
+                              <td valign="top">
                                 <img src="http://placehold.it/123x88" width="123px" height="88px" alt="">
 								<h3 class="hero-title">Editorial Board</h3>
 								<p>Our Physician editors collaborate weekly to bring you this informative newletter. Learn more about them</p>
@@ -106,20 +91,20 @@
                 </tr>
 				 <tr>
                   <td>
-                    <table class="message-content-block color-block green-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block green-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;font-weight: normal;text-transform: uppercase;color: #6ab480;">STORY OF THE WEEK</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #77c68c;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+                              <td valign="top">
+                                <h2>STORY OF THE WEEK</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
 								</div>
                               </td>
@@ -132,22 +117,22 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block green-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block green-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;font-weight: normal;text-transform: uppercase;color: #6ab480;">STORY OF THE WEEK</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #77c68c;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+                              <td valign="top">
+                                <h2>STORY OF THE WEEK</h2>
+								<div class="border-block">
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
 								</div>
                               </td>
@@ -160,32 +145,32 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block green-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block green-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;font-weight: normal;text-transform: uppercase;color: #6ab480;">STORY OF THE WEEK</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #77c68c;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+                              <td valign="top">
+                                <h2>STORY OF THE WEEK</h2>
+								<div class="border-block">
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
 								</div>
                               </td>
@@ -198,18 +183,18 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block yellow-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block yellow-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #F2B723;">EXPERT OPINION</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #F2B723;">
-									<h3 style="font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information That is Longer</h3>
-									<span style="text-transform: none;font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+                              <td valign="top">
+                                <h2>EXPERT OPINION</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information That is Longer</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
 								</div>
                               </td>
                             </tr>
@@ -221,18 +206,18 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block blue-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block blue-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #1E7998;">news</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #1E7998;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information That is Longer</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+                              <td valign="top">
+                                <h2>news</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is a Title for a Section of Information That is Longer</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
 								</div>
                               </td>
                             </tr>
@@ -244,18 +229,18 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block red-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block red-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #975b61;">JOURNAL SCANS RESEARCH</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #975b61;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information That is Longer</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+                              <td valign="top">
+                                <h2>JOURNAL SCANS RESEARCH</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is a Title for a Section of Information That is Longer</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
 								</div>
                               </td>
                             </tr>
@@ -270,24 +255,24 @@
 			<table class="message-layout message-body-content">
               <tbody>
 			  <tr>
-				<td><h1 style="font-size: 30px;color: #776F67;font-family: Arial;margin: 26px 20px 17px;">Daily Digest Channel</h1></td>
+				<td><h1>Daily Digest Channel</h1></td>
 			  </tr>
 				 <tr>
                   <td>
-                    <table class="message-content-block color-block green-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block green-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #6ab480;">STORY OF THE WEEK</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #77c68c;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+                              <td valign="top">
+                                <h2>STORY OF THE WEEK</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
 								</div>
                               </td>
@@ -300,22 +285,22 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block green-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block green-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #6ab480;">STORY OF THE WEEK</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #77c68c;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+                              <td valign="top">
+                                <h2>STORY OF THE WEEK</h2>
+								<div class="border-block">
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
 								</div>
                               </td>
@@ -328,32 +313,32 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block green-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block green-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #6ab480;">STORY OF THE WEEK</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #77c68c;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+                              <td valign="top">
+                                <h2>STORY OF THE WEEK</h2>
+								<div class="border-block">
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is Another Title from the Same Author</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+									<h3>Here is Another Title from the Same Author</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
-									<div class="avatar commentary-block" style="margin: 11px 0 11px 9px;">
-										<img src="http://placehold.it/26x26" width="26px" height="26px" style="margin: 0 5px 0 0;float: left;" alt="">
-										<span class="commentary" style="font-family: Arial;font-size: 11px;color: #A7A9AC;display: block;margin: 0 0 1px;font-style: italic;line-height: 10px;">Commentary by</span>
-										<p style="font-family: Arial;font-size: 11px;color: #777067;">Expert Name MD., PHD, SS, DDS, ETC</p>
+									<div class="avatar commentary-block">
+										<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+										<span>Commentary by</span>
+										<p>Expert Name MD., PHD, SS, DDS, ETC</p>
 									</div>
 								</div>
                               </td>
@@ -366,18 +351,18 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block yellow-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block yellow-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #F2B723;">EXPERT OPINION</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #F2B723;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information That is Longer</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+                              <td valign="top">
+                                <h2>EXPERT OPINION</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information That is Longer</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
 								</div>
                               </td>
                             </tr>
@@ -389,18 +374,18 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block blue-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block blue-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #1E7998;">news</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #1E7998;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information That is Longer</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+                              <td valign="top">
+                                <h2>news</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is a Title for a Section of Information That is Longer</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
 								</div>
                               </td>
                             </tr>
@@ -412,18 +397,18 @@
                 </tr>
 				<tr>
                   <td>
-                    <table class="message-content-block color-block red-block" style="margin: 0 20px 21px;">
+                    <table class="message-content-block color-block red-block">
                       <tr>
-                        <td style="background: none;margin: 0;">
+                        <td>
                           <table class="module-hero" cellspacing="0">
                             <tr>
-                              <td valign="top" style="background: none;margin: 0;">							    
-                                <h2 style="font-family: 'DIN-Regular';margin: 0 0 11px;font-size: 17px;text-transform: uppercase;font-weight: normal;color: #975b61;">JOURNAL SCANS RESEARCH</h2>
-								<div class="border-block" style="margin: 0 0 0 2px;padding: 0 0 0 8px;border-left: 4px solid #975b61;">
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
-									<h3 style="text-transform: none;font-family: Arial;font-size: 18px;font-weight: normal;color: #dc6751;line-height: 16px;margin: 0 0 4px;">Here is a Title for a Section of Information That is Longer</h3>
-									<span style="font-family: Arial;font-size: 11px;color: #777067;display: block;margin: 0 0 12px;">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+                              <td valign="top">							    
+                                <h2>JOURNAL SCANS RESEARCH</h2>
+								<div class="border-block">
+									<h3>Here is a Title for a Section of Information</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+									<h3>Here is a Title for a Section of Information That is Longer</h3>
+									<span>Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
 								</div>
                               </td>
                             </tr>
@@ -439,8 +424,8 @@
 							<tr>
 								<td>
 									<div class="advertsement-img">
-										<p style="font-size:8px; background:#aca198; font-family:'Lucida Sans Unicode'; color:#fff; text-transform:uppercase; padding:0 0 0 12px;">advertsement</p>
-										<img src="http://placehold.it/582x72" style=" width: 100%;" alt="">
+										<p>advertsement</p>
+										<img src="http://placehold.it/582x72" alt="">
 									</div>
 								</td>
 							</tr>
