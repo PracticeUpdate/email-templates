@@ -14,7 +14,7 @@
 	}
 	.message-banner {
 		h1 {
-			font-family: 'Lucida Sans Unicode';
+			font-family: 'Lucida Sans Unicode', sans-serif;
 			margin: 33px 0 2px;
 		}
 		h2 {
@@ -33,7 +33,7 @@
 				p {
 					font-size:8px;
 					background:#aca198;
-					font-family:'Lucida Sans Unicode'; 
+					font-family:'Lucida Sans Unicode', sans-serif; 
 					color:#fff; 
 					text-transform:uppercase; 
 					padding:0 0 0 12px;
@@ -81,7 +81,7 @@
 					margin:0;
 					padding:0 !important;
 					h2 {
-						font-family: 'DIN-Regular';
+						font-family: 'DIN-Regular', sans-serif;
 						margin: 0 0 11px;
 						font-size: 17px;
 						font-weight: normal;
