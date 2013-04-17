@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title></title>
+<style>
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../scss/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../scss/normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../scss/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 50, ../scss/normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, ../scss/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 74, ../scss/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, ../scss/normalize.scss */
+a:focus {
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, ../scss/normalize.scss */
+a:active,
+a:hover {
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 108, ../scss/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 117, ../scss/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 126, ../scss/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 134, ../scss/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 142, ../scss/normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 152, ../scss/normalize.scss */
+mark {
+  background-color: #FFFF00;
+  color: #000000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 164, ../scss/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 173, ../scss/normalize.scss */
+pre {
+  /*white-space: pre-wrap;*/
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 181, ../scss/normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 189, ../scss/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 198, ../scss/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 205, ../scss/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 209, ../scss/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 221, ../scss/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 229, ../scss/normalize.scss */
+svg:not(:root) {
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 241, ../scss/normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 253, ../scss/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 264, ../scss/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 278, ../scss/normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 290, ../scss/normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 302, ../scss/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 317, ../scss/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 327, ../scss/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 337, ../scss/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 348, ../scss/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 361, ../scss/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 370, ../scss/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 380, ../scss/normalize.scss */
+textarea {
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 393, ../scss/normalize.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* vars */
+/* base */
+/* line 13, ../scss/base.scss */
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* line 18, ../scss/base.scss */
+h1, h2, h3, h4, h5, h6, p, small {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21, ../scss/base.scss */
+* {
+  -webkit-text-size-adjust: none;
+}
+
+/* line 23, ../scss/base.scss */
+table {
+  border-collapse: collapse;
+}
+
+
+/* line 34, ../scss/base.scss */
+.body-table tr {
+  width: 100%;
+}
+
+/*  layout */
+
+/* line 62, ../scss/base.scss */
+.module-hero td ul {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+/* line 63, ../scss/base.scss */
+.module-hero td li {
+  list-style: disc;
+  list-style-image: inherit;
+  list-style-position: inside;
+}
+
+/* line 77, ../scss/base.scss */
+.legal-logo {
+  padding-top: 40px;
+  text-align: center;
+}
+
+/* line 81, ../scss/base.scss */
+.legal-copyright {
+  text-align: center;
+}
+
+/* line 84, ../scss/base.scss */
+.legal-address {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+/*  type */
+/* line 90, ../scss/base.scss */
+h1 {
+  font-size: 38px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 96, ../scss/base.scss */
+h2, h3 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* line 103, ../scss/base.scss */
+p {
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 14px;
+  text-align: left;
+}
+
+/* line 110, ../scss/base.scss */
+ul {
+  padding-left: 0px;
+}
+
+/* line 114, ../scss/base.scss */
+li {
+  font-size: 13px;
+  line-height: 1.4;
+  list-style: circle;
+  list-style-image: url(bullet.jpg);
+  list-style-position: inside;
+  text-align: left;
+}
+
+/* line 123, ../scss/base.scss */
+.message-type {
+  color: #a7a9ac;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* line 132, ../scss/base.scss */
+small {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+/* line 137, ../scss/base.scss */
+.message-user-pref {
+  text-align: center;
+  width: 100%;
+}
+
+/* line 141, ../scss/base.scss */
+.message-recip-disclosure {
+  padding-top: 10px;
+}
+
+/* line 145, ../scss/base.scss */
+.message-recip-actions {
+  font-size: 14px;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/*  theme */
+/* line 154, ../scss/base.scss */
+a {
+  color: #da6651;
+}
+
+/* line 158, ../scss/base.scss */
+.button {
+  color: #FFFFFF;
+  font-size: 11px;
+  line-height: 1.2;
+  padding: 5px 7px;
+  text-transform: uppercase;
+}
+
+/* line 168, ../scss/base.scss */
+.message-banner {
+  background-color: #16799a;
+  color: #FFFFFF;
+}
+
+/* line 172, ../scss/base.scss */
+.message-banner-border {
+  background-color: #da6651;
+}
+
+/* line 176, ../scss/base.scss */
+.message-body-content {
+  background-color: #FFFFFF;
+  border: 2px solid #e6e7e8;
+}
+
+/* line 184, ../scss/base.scss */
+.message-user-pref a:link, .message-user-pref a:visited, .message-user-pref a:hover, .message-user-pref a:active {
+  color: #776f67;
+  text-decoration: none;
+}
+
+/* line 191, ../scss/base.scss */
+.message-footer-brand {
+  background-color: #16799a;
+  color: #FFFFFF;
+}
+/* line 194, ../scss/base.scss */
+.message-footer-brand .footer-brand-content {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* line 198, ../scss/base.scss */
+.message-footer-brand a {
+  color: #FFFFFF;
+}
+/* line 201, ../scss/base.scss */
+.message-footer-brand .product-contact-link-list {
+  text-align: right;
+}
+/* line 204, ../scss/base.scss */
+.message-footer-brand .product-contact-link {
+  font-size: 11px;
+  line-height: 1.2;
+}
+/* line 208, ../scss/base.scss */
+.message-footer-brand .product-contact-link a:link, .message-footer-brand .product-contact-link a:visited, .message-footer-brand .product-contact-link a:hover, .message-footer-brand .product-contact-link a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 215, ../scss/base.scss */
+.message-footer-legal {
+  background-color: #776f67;
+  color: #FFFFFF;
+}
+/* line 218, ../scss/base.scss */
+.message-footer-legal a {
+  color: #FFFFFF;
+}
+
+/* type theme-color */
+/* line 224, ../scss/base.scss */
+body {
+  color: #776f67;
+}
+
+/* line 227, ../scss/base.scss */
+.section-title {
+  color: #16799a;
+}
+
+/* Mobile specific */
+/* @media only screen and (max-width: 480px) { */
+@media (max-width: 600px) {
+  /* mobile-specific CSS styles go here */
+  /* line 235, ../scss/base.scss */
+  table[class="message-layout"], .message-layout {
+    width: 98% !important;
+  }
+}
+/*
+
+@media (max-width: 600px) {
+  #info-inner { padding:0 20px 0 5px; }
+  button { margin:0; width:100%; }
+  #button-wrapper { border:0; }
+  #button-wrapper>div { padding:0; }
+  * { -webkit-text-size-adjust:none; }
+  table[id=wrapper] { width:100%!important; padding:40px 10px !important; background:url(http://email.smartfocusdigital.com/AEM/Clients/EST001/images/starbucks/background.gif) 0 0 repeat-x;}
+  table[id=wrapper] #main, table[id=wrapper] .inner { width:100% !important; }
+  table[id=wrapper] .bg-image, table[id=wrapper] .spacer { width:0 !important; display:none !important; }
+  table[id=wrapper] .text { padding:10px !important; font-size:12px !important; }
+  table[id=wrapper] #header .block { display:block; line-height:0; text-indent:-999em;color:#ffffff; }
+  table[id=wrapper] #header span.heading { display:block; line-height:1; font-size:18px !important; }
+  table[id=wrapper] #header td { width:auto !important; }
+  table[id=wrapper] #header .logo img { width:73px !important; }
+  table[id=wrapper] #online-link { font-size:12px !important; text-align:left !important; vertical-align:bottom !important; padding-bottom:5px !important; }
+  table[id=wrapper] #intro .logo { display:none !important; width:0 !important; }
+  table[id=wrapper] #intro .text { background:url(http://email.smartfocusdigital.com/AEM/Clients/EST001/images/starbucks/intro-bg.jpg) top left no-repeat; padding-left:90px !important; }
+  table[id=wrapper] #offer .text { background:url(http://email.smartfocusdigital.com/AEM/Clients/EST001/images/starbucks/offer-bg.jpg) top right no-repeat; padding-right:90px !important; }
+  table[id=wrapper] #offer .terms {margin-bottom:-5px; }
+  table[id=wrapper] #offer .inner { width:100% !important; }
+  table[id=wrapper] .heading { font-size:14px !important; font-weight:bold !important; }
+}
+*/
+/* line 16, ../scss/subscription.scss */
+.message-container .message-banner h1 {
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  color:#ffffff;
+}
+.message-container .message-banner h2 {
+  color:#ffffff;
+}
+/* line 25, ../scss/subscription.scss */
+.message-container .message-banner-border td {
+  display: block;
+  height: 10px;
+}
+/* line 33, ../scss/subscription.scss */
+.message-container tbody .message-body-content .advertsement-img p {
+  font-size: 8px;
+  background-color: #aca198;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 0 0 12px;
+}
+/* line 41, ../scss/subscription.scss */
+.message-container tbody .message-body-content .advertsement-img img {
+  width: 100%;
+}
+/* line 45, ../scss/subscription.scss */
+.message-container tbody .message-body-content td {
+  padding: 0;
+}
+/* line 48, ../scss/subscription.scss */
+.message-container tbody .message-body-content td h1 {
+  font-size: 30px;
+  color: #776F67;
+  font-family: Arial;
+}
+/* line 54, ../scss/subscription.scss */
+.message-container tbody .message-body-content td td {
+  vertical-align: top;
+}
+/* line 61, ../scss/subscription.scss */
+.message-container tbody .message-body-content td td .button {
+  float: right;
+  padding: 6px 31px;
+}
+/* line 68, ../scss/subscription.scss */
+/* line 72, ../scss/subscription.scss */
+.message-container tbody .message-body-content td .module-hero td[valign="top"] {
+  
+}
+/* line 83, ../scss/subscription.scss */
+h2.title-message-green-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #6ab480;
+}
+h2.title-message-blue-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #1E7998;
+}
+h2.title-message-red-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #1E7998;
+}
+h2.title-message-yellow-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #F2B723;
+}
+/* line 90, ../scss/subscription.scss */
+.message-container tbody .message-body-content .color-block td .border-block {
+  margin: 0 0 0 2px;
+  padding: 0 0 0 8px;
+}
+/* line 93, ../scss/subscription.scss */
+h3.title-border-block {
+  text-transform: none;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: normal;
+  color: #dc6751;
+  line-height: 16px;
+  margin: 0 0 4px;
+}
+/* line 102, ../scss/subscription.scss */
+span.text-under-title {
+  font-family: Arial;
+  font-size: 11px;
+  color: #777067;
+  display: block;
+  margin: 0 0 12px;
+}
+/* line 110, ../scss/subscription.scss */
+.commentary-block,
+.commentary,
+#commentary {
+  margin: 11px 0 11px 9px;
+}
+/* line 112, ../scss/subscription.scss */
+.commentary-block img {
+  float: left;
+}
+/* line 116, ../scss/subscription.scss */
+.commentary-block span {
+  font-family: Arial;
+  font-size: 11px;
+  color: #A7A9AC;
+  display: block;
+  margin: 0 0 1px;
+  font-style: italic;
+  line-height: 10px;
+}
+/* line 125, ../scss/subscription.scss */
+.commentary-block p {
+  font-family: Arial;
+  font-size: 11px;
+  color: #777067;
+}
+/* line 135, ../scss/subscription.scss */
+.message-container tbody .message-body-content .color-block.green-block .border-block {
+  border-left: 4px solid #77c68c;
+}
+/* line 143, ../scss/subscription.scss */
+.message-container tbody .message-body-content .color-block.yellow-block .border-block {
+  border-left: 4px solid #F2B723;
+}
+/* line 151, ../scss/subscription.scss */
+.message-container tbody .message-body-content .color-block.blue-block .border-block {
+  border-left: 4px solid #1E7998;
+}
+/* line 159, ../scss/subscription.scss */
+.message-container tbody .message-body-content .color-block.red-block .border-block {
+  border-left: 4px solid #1E7998;
+}
+
+/* line 170, ../scss/subscription.scss */
+.mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+	.brand-logo {
+		width:100%;
+		text-align:center;
+	}
+	.brand-message-type {
+		width:100%;
+		text-align:center;
+	}
+	.social-button {
+		width:100%;
+		text-align:center
+	}
+	.social-button table{
+		width:100%;
+		text-align:center
+	}
+	.footer-logo {
+		width:100%;
+		text-align:center
+	}
+	.footer-logo table{
+		width:100%;
+		text-align:center
+	}
+	.footer-logo table td{
+		width:100%;
+		text-align:center
+	}
+	.message-footer-brand .product-contact-link-list {
+		text-align: center;
+	}
+  /* line 175, ../scss/subscription.scss */
+  .mobile {
+    display: table;
+  }
+
+  /* line 176, ../scss/subscription.scss */
+  .message-header .message-layout {
+    text-align: center;
+  }
+
+  /* line 178, ../scss/subscription.scss */
+  .message-type,
+  .brand-message-type {
+    text-align: center;
+  }
+
+  /* line 179, ../scss/subscription.scss */
+  .mobile .module-hero {
+    text-align: center;
+  }
+
+  /* line 180, ../scss/subscription.scss */
+  .hero-title {
+    padding: 0;
+  }
+
+  /* line 181, ../scss/subscription.scss */
+  .module-hero td img {
+    margin: 19px 15px 5px 17px;
+  }
+
+  /* line 182, ../scss/subscription.scss */
+  .module-hero td {
+    padding: 0 0 14px;
+  }
+
+  /* line 183, ../scss/subscription.scss */
+  .module-hero td p {
+    padding: 0 8px;
+  }
+
+  /* line 184, ../scss/subscription.scss */
+  .color-block .module-hero td {
+    padding: 0;
+  }
+}
+
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <table class="message-container" width="100%" cellspacing="0" cellpadding="0" border="0">
+       <thead>
+        <tr class="message-header">
+          <td align="left">
+            <table width="588" align="center" cellspacing="0" cellpadding="0" border="0" class="message-layout">
+				<tr align="left">
+					<td width="100%">
+						<table class="brand-logo" align="left" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td style="padding:17px 0 10px;">
+									<img src="<!-- @path logo.jpg -->" width="221px" height="49px" alt="PracticeUpdate logo">
+								</td>
+							</tr>
+						</table>
+						<table class="brand-message-type" align="right" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+								<td style="padding:15px 0 10px;">
+									<span class="message-type">Specific newsletter <br>and we need to say more</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+            </table><!--/.message-container-->
+          </td>
+        </tr><!--/.message-header-->
+        <tr class="message-banner">
+          <td align="left">
+            <table class="message-layout" width="588" align="center" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                    <td align="left" style="padding: 33px 0 2px;"><h1>PLACE FOR TITLE RIGHT HERE!</h1></td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding: 0 0 24px;"><h2>HERE IS A SUB HEADLINE TITLE</h2></td>
+                </tr>
+              </tbody>
+            </table><!--/.message-layout-->
+          </td>
+        </tr><!--/.message-banner-->
+      </thead>
+      <tbody>
+		<tr class="message-body">
+          <td align="left" style="padding:20px 0 0;" bgcolor="#ffffff">
+            <table class="message-layout message-body-content" width="588" align="center" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr class="pc">
+                  <td align="left" style="border: 2px solid #E6E7E8; padding:20px;" bgcolor="#ffffff">
+                    <table class="message-content-block" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td align="left" bgcolor="#ffffff" style="padding:0 0 20px;">
+                          <table class="module-hero" bgcolor="transparent" cellspacing="0" cellpadding="0" border="0">
+                            <tr>
+                              <td  align="left" valign="top" width="100%"  bgcolor="#E6E7E8">
+								<table cellspacing="0" cellpadding="0" border="0" align="left">
+									<tr>
+										<td  align="left" valign="top" style="padding: 19px 15px 14px 17px;">
+											<img src="http://placehold.it/123x88" width="123px" height="88px" alt="">
+  									    </td>
+									</tr>
+								</table>
+								<table cellspacing="0" cellpadding="0" border="0" align="right;">
+									<tr>
+										<td  align="left" valign="top" style="padding: 13px 30px 10px 0;">
+											<h3 class="hero-title">Editorial Board</h3>
+											<p>Our Physician editors collaborate weekly to bring you this informative newletter. Learn more about them</p>
+											<table cellspacing="0" cellpadding="0" border="0" align="right" bgcolor="#DA6651" style="border-radius:5px;">
+												<tr>
+													<td>
+														<a class="button">learn more</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+					  <tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-green-block">STORY OF THE WEEK</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="77C68C"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-green-block">STORY OF THE WEEK</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="77C68C"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+                    </table><!--/.message-content-block-->
+                  </td>
+                </tr>
+              </tbody>
+            </table><!--/.message-layout-->
+		</td>
+	</tr>
+	<tr class="message-body">
+		<td align="left"  style="padding:20px;"  bgcolor="#ffffff">
+			<table class="message-layout message-body-content"width="588" cellspacing="0" cellpadding="0" border="0" align="center">
+              <tbody>
+				<tr>
+					<td style="border: 2px solid #E6E7E8; padding:26px 20px 17px 20px" align="left" >
+					<table>
+				    <tr>
+						<td align="left" bgcolor="#ffffff" style="padding:0 0 17px;"><h1>Daily Digest Channel</h1></td>
+				    </tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-green-block">STORY OF THE WEEK</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="77C68C"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is a Title for a Section of Information</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-green-block">STORY OF THE WEEK</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="77C68C"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-green-block">STORY OF THE WEEK</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="77C68C"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<h3 class="title-border-block">Here is Another Title from the Same Author</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table class="commentary-block" width="100%" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+													<tr>
+														<td align="left" width="26px" style="padding:0 5px 0 0">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0" align="left">
+																<tr>
+																	<td>
+																		<img src="http://placehold.it/26x26" width="26px" height="26px" alt="">
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td align="left">
+															<table cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+																<tr>
+																	<td>
+																		<span>Commentary by</span>
+																		<p>Expert Name MD., PHD, SS, DDS, ETC</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-yellow-block">EXPERT OPINION</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="F2B723"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is a Title for a Section of Information That is Longer</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<h3 class="title-border-block">Here is a Title for a Section of Information</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">
+									<h2 class="title-message-blue-block">NEWS</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="1E7998"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is a Title for a Section of Information</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<h3 class="title-border-block">Here is a Title for a Section of Information That is Longer</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					<tr>
+					  <td align="left" bgcolor="#ffffff" style="padding:0 0 21px;">
+						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
+						  <tr>
+							<td align="left" bgcolor="#ffffff">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+								  <td valign="top" align="left" bgcolor="#ffffff">							    
+									<h2 class="title-message-red-block">JOURNAL SCANS RESEARCH</h2>
+									<table class="border-block">
+										<tr>
+											<td width="2"></td>
+											<td width="4" bgcolor="1E7998"></td>
+											<td width="8"></td>
+											<td >
+												<h3 class="title-border-block">Here is a Title for a Section of Information</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+												<h3 class="title-border-block">Here is a Title for a Section of Information That is Longer</h3>
+												<span class="text-under-title">Interview by Mark Lewis, MD, 2012 Oct 17, Mark Emberton, MD, FRCS</span>
+											</td>
+										</tr>
+									</table>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+						  </tr>
+						</table><!--/.message-content-block-->
+					  </td>
+					</tr>
+					</table>
+					</td>
+				</tr>
+              </tbody>
+            </table><!--/.message-layout-->
+          </td>
+        </tr><!--/.message-body-->
+        <tr class="message-utility">
+          <td align="left" bgcolor="#ffffff">
+            <table width="588" align="center" class="message-layout" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td align="left" bgcolor="#ffffff">
+                  <table class="module message-user-pref" cellspacing="0" cellpadding="0" border="0">
+                    <tbody>
+                      <td class="message-recip-disclosure" align="left" bgcolor="#ffffff">
+                        <small>You're receiving this newsletter because you signed up at <a href="http://www.practiceupdate.com">PracticeUpdate.com</a></small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="message-recip-actions" align="left">
+                        <span class="utility-action-link"><a href="">Forward&nbsp;Email</a></span>
+                        <span class="divider">|</span>
+                        <span class="utility-action-link"><a href="">Manage&nbsp;Subscription</a></span>
+                        <span class="divider">|</span>
+                        <span class="utility-action-link"><a href="">Subscribe</a></span>
+                        <span class="divider">|</span>
+                        <span class="utility-action-link"><a href="">Privacy&nbsp;Policy</a></span>
+                        <span class="divider">|</span>
+                        <span class="utility-action-link"><a href="">Unsubscribe</a></span>
+                      </td>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </table><!--/.message-layout-->
+          </td>
+        </tr><!--/.message-utility-->
+
+        <tr class="message-footer-brand">
+          <td align="left">
+            <table width="588" align="center" class="message-layout footer-brand-content" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" border="0" align="left" class="social-button">
+					  <td class="product-social" align="left">
+						<table cellspacing="0" cellpadding="0" border="0">
+						  <tbody>
+							<tr>
+							  <td align="left"><a href="#"><img src="<!-- @path icn-facebook.gif -->" alt="facebook" /></a></td>
+							  <td align="left"><a href="#"><img src="<!-- @path icn-twitter.gif -->" alt="twitter" /></a></td>
+							  <td align="left"><a href="#"><img src="<!-- @path icn-google.gif -->" alt="google" /></a></td>
+							</tr>
+						  </tbody>
+						</table>
+					  </td>
+					  </table>
+					  <table cellspacing="0" cellpadding="0" border="0" align="right" class="footer-logo">
+					  <td class="product-contact" align="right">
+						<table cellspacing="0" cellpadding="0" border="0">
+						  <tbody>
+							<tr>
+							  <td align="left">
+								<img src="<!-- @path logo-practiceupdate-inverse.gif -->" alt="PracticeUpdate logo" />
+							  </td>
+							</tr>
+							<tr>
+							  <td align="left" class="product-contact-link-list">
+								<span class="product-contact-link"><a href="#">Contact&nbsp;Us</a></span>
+								<span class="divider">|</span>
+								<span class="product-contact-link"><a href="#">Advertise</a></span>
+							  </td>
+							</tr>
+						  </tbody>
+						</table>
+						</td>
+						</table>
+					</td>
+                  </td>
+                </tr>
+              </tbody>
+            </table><!--/.message-layout-->
+          </td>
+        </tr><!--/.message-footer-brand-->
+
+        <tr class="message-footer-legal">
+          <td align="left">
+            <table class="message-layout" align="center" width="588" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td align="left" class="legal-logo">
+                  <img src="<!-- @path logo-elsevier.jpg -->" alt="Elsevier Logo" />
+                </td>
+              </tr>
+              <tr>
+                <td align="left" class="legal-copyright">
+                  <small>Copyright &copy;  2013, Elsevier Inc. All rights reserved.</small>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" class="legal-address">
+                  <small>Elsevier Inc., 1600 John F. Kennedy Boulevard,Suite 1800. Philadelphia, PA 19103-2899, USA</small>
+                </td>
+              </tr>
+            </table><!--/.message-layout-->
+          </td>
+        </tr><!--/.message-footer-legal-->
+      </tbody>
+    </table><!--/.body-table-->
+	</body>
+
+<!--
+
+class cheat sheet
+
+    message-container
+    message-header
+    message-banner
+    message-body
+    message-utility
+    message-footer-brand
+    message-footer-legal
+
+-->
+</html>

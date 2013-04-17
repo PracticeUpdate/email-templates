@@ -7,7 +7,6 @@
 		padding: 17px 0 10px;
 	}
 	.message-layout {
-		display:block;
 		&.mobile {
 			display:none;
 		}
@@ -34,7 +33,7 @@
 					font-size:8px;
 					background:#aca198;
 					font-family:'Lucida Sans Unicode', sans-serif; 
-					color:#fff; 
+					color:#ffffff; 
 					text-transform:uppercase; 
 					padding:0 0 0 12px;
 				}
@@ -166,9 +165,6 @@
 			}
 		}
 	}
-}
-.mobile {
-	display:none;
 }
 @media (max-width: 600px) {
 	.pc {display:none;}

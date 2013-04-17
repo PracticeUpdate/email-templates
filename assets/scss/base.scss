@@ -115,7 +115,7 @@ li{
   font-size: 13px;
   line-height: 1.4;
   list-style: circle;
-  list-style-image: url(bullet.png);
+  list-style-image: url(bullet.jpg);
   list-style-position: inside;
   text-align: left;
 }
@@ -236,10 +236,17 @@ body{
         width: 98% !important;
     }
 }
-
+.message-container .brand-logo.top-header-tr {
+	height:15px;
+}
+.message-container .brand-message-type.bottom-header-tr {
+  height:10px;
+}
 /*
 
 @media (max-width: 600px) {
+	.message-container .brand-logo {float: left;text-align: center;width: 100%;	}
+	.message-container .brand-message-type {float: left;text-align: center;width: 100%;	}
   #info-inner { padding:0 20px 0 5px; }
   button { margin:0; width:100%; }
   #button-wrapper { border:0; }
@@ -249,15 +256,15 @@ body{
   table[id=wrapper] #main, table[id=wrapper] .inner { width:100% !important; }
   table[id=wrapper] .bg-image, table[id=wrapper] .spacer { width:0 !important; display:none !important; }
   table[id=wrapper] .text { padding:10px !important; font-size:12px !important; }
-  table[id=wrapper] #header .block { display:block; line-height:0; text-indent:-999em;color:#fff; }
+  table[id=wrapper] #header .block { display:block; line-height:0; text-indent:-999em;color:#ffffff; }
   table[id=wrapper] #header span.heading { display:block; line-height:1; font-size:18px !important; }
   table[id=wrapper] #header td { width:auto !important; }
   table[id=wrapper] #header .logo img { width:73px !important; }
   table[id=wrapper] #online-link { font-size:12px !important; text-align:left !important; vertical-align:bottom !important; padding-bottom:5px !important; }
   table[id=wrapper] #intro .logo { display:none !important; width:0 !important; }
   table[id=wrapper] #intro .text { background:url(http://email.smartfocusdigital.com/AEM/Clients/EST001/images/starbucks/intro-bg.jpg) top left no-repeat; padding-left:90px !important; }
-  table[id=wrapper] #offer .text { background:url(http://email.smartfocusdigital.com/AEM/Clients/EST001/images/starbucks/offer-bg.jpg) top right no-repeat; padding-right:90px !important; position:relative; }
-  table[id=wrapper] #offer .terms { position:absolute !important; margin-bottom:-5px; }
+  table[id=wrapper] #offer .text { background:url(http://email.smartfocusdigital.com/AEM/Clients/EST001/images/starbucks/offer-bg.jpg) top right no-repeat; padding-right:90px !important; }
+  table[id=wrapper] #offer .terms { margin-bottom:-5px; }
   table[id=wrapper] #offer .inner { width:100% !important; }
   table[id=wrapper] .heading { font-size:14px !important; font-weight:bold !important; }
 }
