@@ -1,23 +1,40 @@
+@import "base";
 
+body {border:none;}
 .message-container {
 	.brand-logo {
 		padding: 15px 0 10px;
+		td {
+			padding:17px 0 10px ;
+		}
 	}
 	.brand-message-type {
-		padding: 17px 0 10px;
+		td{
+			padding:15px 0 10px ;
+		}
 	}
 	.message-layout {
 		&.mobile {
 			display:none;
 		}
+		.title-page {
+			padding: 33px 0 2px ;
+		}
+		.sub-title-page {
+			padding: 0 0 24px ;
+		}
 	}
 	.message-banner {
 		h1 {
 			font-family: 'Lucida Sans Unicode', sans-serif;
-			margin: 33px 0 2px;
+			color:#ffffff;
+			margin:0 ;
+			font-size:38px;
 		}
 		h2 {
-			margin: 0 0 24px;
+			color:#ffffff;
+			margin:0 ;
+			font-size:20px;
 		}
 	}
 	.message-banner-border {
@@ -42,90 +59,29 @@
 				}
 			}
 			td {
-				background:none;
-				padding:0;
 				h1 {
-					font-size: 30px;
-					color: #776F67;
+					font-size: 30px ;
+					color: #776F67 ;
 					font-family: Arial;
-					margin: 26px 20px 17px;
+					margin:0;
 				}
 				td{
-					background: #e6e7e8;
 					vertical-align: top;
-					h3 {
-						text-transform: capitalize;
-						font-weight:bold;
-					}
 					.button {
-						float: right;
-						margin: 0 18px 0 0;
 						padding: 6px 31px;
-					}
-				}
-				.module-hero {
-					td{
-						padding: 13px 30px 10px 0;
-						background: #e6e7e8;
-					}
-					td[valign="top"] {
-						padding: 19px 15px 14px 17px;
+						color:#ffffff;
+						display:block;
 					}
 				}
 			}
 			.color-block {
-				margin: 0 20px 21px;
-				td {
-					background:none !important;
-					margin:0;
-					padding:0 !important;
-					h2 {
-						font-family: 'DIN-Regular', sans-serif;
-						margin: 0 0 11px;
-						font-size: 17px;
-						font-weight: normal;
-						text-transform: uppercase;						
-					}
+				td {					
 					.border-block {
 						margin: 0 0 0 2px;
 						padding: 0 0 0 8px;
-						h3 {
-							text-transform: none;
-							font-family: Arial;
-							font-size: 18px;
-							font-weight: normal;
-							color: #dc6751;
-							line-height: 16px;
-							margin: 0 0 4px;
-						}
-						span {
-							font-family: Arial;
-							font-size: 11px;
-							color: #777067;
-							display: block;
-							margin: 0 0 12px;
-						}
-						.avatar{
-							&.commentary-block {
-								margin: 11px 0 11px 9px;
-								img {
-									margin: 0 5px 0 0;
-									float: left;
-								}
-								span {
-									font-family: Arial;
-									font-size: 11px;
-									color: #A7A9AC;
-									display: block;
-									margin: 0 0 1px;
-									font-style: italic;
-									line-height: 10px;
-								}
-								p{
-									font-family: Arial;
-									font-size: 11px;
-									color: #777067;
-								}
+						.commentary-block {
+							img {
+								float: left;
 							}
 						}
 					}
@@ -134,48 +90,158 @@
 					.border-block {
 						border-left: 4px solid #77c68c;
 					}
-					h2 {
-						color: #6ab480;
-					}
 				}
 				&.yellow-block {
 					.border-block {
 						border-left: 4px solid #F2B723;
-					}
-					h2 {
-						color: #F2B723;
 					}
 				}
 				&.blue-block {
 					.border-block {
 						border-left: 4px solid #1E7998;
 					}
-					h2 {
-						color: #1E7998;
-					}
 				}
 				&.red-block {
 					.border-block {
 						border-left: 4px solid #1E7998;
-					}
-					h2 {
-						color: #1E7998;
 					}
 				}
 			}
 		}
 	}
 }
+.learn-more-table tr td{
+  padding: 6px 31px;
+  color: #ffffff;
+  display: block;
+}
+.learn-more-table tr td a{
+  border-radius:5px;
+  text-decoration:none;
+  color: #ffffff;
+  font-family: 'DIN-Regular', sans-serif;
+}
+h2.title-message-green-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #6ab480;
+}
+h2.title-message-blue-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #1E7998;
+}
+h2.title-message-red-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #1E7998;
+}
+h2.title-message-yellow-block {
+  font-family: 'DIN-Regular', sans-serif;
+  margin: 0 0 11px;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #F2B723;
+}
+h3.title-border-block {
+	text-transform: none ;
+	font-family: Arial;
+	font-size: 18px ;
+	font-weight: normal;
+	color: #dc6751 ;
+	line-height: 16px ;
+	margin: 0 0 4px;
+}
+span.text-under-title {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #777067;
+  display: block;
+  margin: 0 0 12px;
+}
+.message-body-td {
+	padding:20px 0 0 ;
+}
+.message-body-content-td {
+	border: 2px solid #E6E7E8 ;
+	padding:20px ;
+}
+.message-content-block-td {
+	padding:0 0 20px ;
+}
+.message-content-block-img {
+	padding: 19px 15px 14px 17px ;
+}
+.learn-more-table {
+	border-radius:5px;
+}
+.block-wrap {
+	padding:0 0 21px ;
+}
+.block-wrap-comm {
+	padding:0 5px 5px 11px ;
+}
+.edit-block-el {
+	padding: 13px 30px 10px 0 ;
+	h3 {
+		font-size:22px;
+		font-family: 'DIN-Regular', sans-serif;
+		margin:0 ;
+	}
+	p {
+		font-family: 'DIN-Regular', sans-serif;
+		font-size: 14px;
+		line-height: 1.2;
+		padding-bottom: 14px;
+		text-align: left;
+	}
+}
+.deily-block-wrapp {
+	padding:20px;
+}
+.footer-brand-content-td {
+	padding:20px 0 ;
+}
+.commentary-by-table {
+	span {
+		font-family: Arial;
+		font-size: 11px;
+		color: #A7A9AC;
+		display: block;
+		margin: 0 0 1px;
+		font-style: italic;
+		line-height: 10px;
+	}
+	p {
+		font-family: Arial;
+		font-size: 11px ;
+		color: #777067;
+		margin: 0 ;
+		padding: 0 ;
+	}
+}
+.wrapp-title {
+	padding:0 0 17px;
+}
 @media (max-width: 600px) {
-	.pc {display:none;}
-	.mobile{display:table;}
+	.brand-logo {width:100%;text-align:center;}
+	.brand-message-type {width:100%;text-align:center;}
+	.editorial-board-img {width:100%;text-align:center;}
+	.editorial-board-img td{text-align:center;}
+	.editorial-board-block .hero-title {text-align:center;}
+	.edit-block-el {padding:0;}
 	.message-header .message-layout {text-align:center;}	
 	.message-type,
 	.brand-message-type	{text-align: center;}
-	.mobile .module-hero {text-align: center;}	
-	.hero-title {padding: 0;}
-	.module-hero td img {margin: 19px 15px 5px 17px;}
-	.module-hero td {padding:0 0 14px;}
-	.module-hero td p{padding:0 8px;}
-	.color-block .module-hero td {padding:0;}
+	.mobile .module-hero {text-align: center;}
 }

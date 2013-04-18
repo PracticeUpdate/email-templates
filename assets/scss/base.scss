@@ -11,11 +11,8 @@ $color-brand-brown: rgb(119,111,103);
 
 /* base */
 body{
-  margin: 0;
-  padding: 0;
   font-family: helvetica, arial, sans-serif;
 }
-h1,h2,h3,h4,h5,h6,p,small{margin: 0; padding: 0;}
 em,strong,i,b{}
 
 * { -webkit-text-size-adjust:none; }
@@ -27,8 +24,6 @@ table {
 
 table, tr, td, th, thead, tfoot{
   border:none;
-  margin:0;
-  Padding:0;
 }
 
 .body-table tr{
@@ -52,13 +47,7 @@ table, tr, td, th, thead, tfoot{
 message-body-content{
 }
 
-.message-content-block{
-  margin: 20px;
-}
-
 .module-hero td{
-  background-color: $color-mid-grey;
-  margin:15px;
   ul{margin-left: 0px; padding-left: 0px;}
   li{
     list-style: disc;
@@ -87,18 +76,6 @@ message-body-content{
 }
 
 /*  type */
-h1{
-  font-size: 38px;
-  font-weight: normal;
-  text-transform: uppercase;
-
-}
-h2, h3{
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
 
 p{
   font-size: 14px;
@@ -156,8 +133,6 @@ a{
 }
 
 .button{
-  background-color: $color-brand-orange;
-  border-radius: 5px;
   color: #FFFFFF;
   font-size: 11px;
   line-height: 1.2;
@@ -173,12 +148,6 @@ a{
   background-color: $color-brand-orange;
 }
 
-.message-body-content{
-  background-color: #FFFFFF;
-  border: 2px solid $color-mid-grey;
-  margin-top: 20px;
-}
-
 .message-user-pref{
   a{
     &:link, &:visited, &:hover, &:active{
@@ -191,10 +160,6 @@ a{
 .message-footer-brand{
   background-color: $color-brand-blue;
   color: #FFFFFF;
-  .footer-brand-content{
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
   a{
     color: #FFFFFF;
   }
