@@ -4,6 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -456,16 +457,18 @@ table, tr, td, th, thead, tfoot {
 /* line 70, ../scss/base.scss */
 .legal-copyright {
   text-align: center;
+  color: #ffffff;
 }
 
-/* line 73, ../scss/base.scss */
+/* line 74, ../scss/base.scss */
 .legal-address {
   padding-bottom: 40px;
   text-align: center;
+  color: #ffffff;
 }
 
 /*  type */
-/* line 80, ../scss/base.scss */
+/* line 82, ../scss/base.scss */
 p {
   font-size: 14px;
   line-height: 1.2;
@@ -473,12 +476,12 @@ p {
   text-align: left;
 }
 
-/* line 87, ../scss/base.scss */
+/* line 89, ../scss/base.scss */
 ul {
   padding-left: 0px;
 }
 
-/* line 91, ../scss/base.scss */
+/* line 93, ../scss/base.scss */
 li {
   font-size: 13px;
   line-height: 1.4;
@@ -488,7 +491,7 @@ li {
   text-align: left;
 }
 
-/* line 100, ../scss/base.scss */
+/* line 102, ../scss/base.scss */
 .message-type {
   color: #a7a9ac;
   font-size: 16px;
@@ -498,24 +501,24 @@ li {
   text-transform: uppercase;
 }
 
-/* line 109, ../scss/base.scss */
+/* line 111, ../scss/base.scss */
 small {
   font-size: 10px;
   line-height: 1.2;
 }
 
-/* line 114, ../scss/base.scss */
+/* line 116, ../scss/base.scss */
 .message-user-pref {
   text-align: center;
   width: 100%;
 }
 
-/* line 118, ../scss/base.scss */
+/* line 120, ../scss/base.scss */
 .message-recip-disclosure {
   padding-top: 10px;
 }
 
-/* line 122, ../scss/base.scss */
+/* line 124, ../scss/base.scss */
 .message-recip-actions {
   font-size: 14px;
   line-height: 1.2;
@@ -524,78 +527,82 @@ small {
 }
 
 /*  theme */
-/* line 131, ../scss/base.scss */
+/* line 133, ../scss/base.scss */
 a {
   color: #da6651;
 }
 
-/* line 135, ../scss/base.scss */
+/* line 137, ../scss/base.scss */
 .button {
   color: #FFFFFF;
   font-size: 11px;
   line-height: 1.2;
-  padding: 5px 7px;
   text-transform: uppercase;
 }
 
-/* line 143, ../scss/base.scss */
+/* line 144, ../scss/base.scss */
 .message-banner {
   background-color: #16799a;
   color: #FFFFFF;
 }
 
-/* line 147, ../scss/base.scss */
+/* line 148, ../scss/base.scss */
 .message-banner-border {
   background-color: #da6651;
 }
 
 /* line 153, ../scss/base.scss */
+.message-user-pref a {
+  color: #776f67;
+  text-decoration: none;
+}
+/* line 156, ../scss/base.scss */
 .message-user-pref a:link, .message-user-pref a:visited, .message-user-pref a:hover, .message-user-pref a:active {
   color: #776f67;
   text-decoration: none;
 }
 
-/* line 160, ../scss/base.scss */
+/* line 163, ../scss/base.scss */
 .message-footer-brand {
   background-color: #16799a;
   color: #FFFFFF;
 }
-/* line 163, ../scss/base.scss */
+/* line 166, ../scss/base.scss */
 .message-footer-brand a {
   color: #FFFFFF;
 }
-/* line 166, ../scss/base.scss */
+/* line 169, ../scss/base.scss */
 .message-footer-brand .product-contact-link-list {
   text-align: right;
 }
-/* line 169, ../scss/base.scss */
+/* line 172, ../scss/base.scss */
 .message-footer-brand .product-contact-link {
   font-size: 11px;
   line-height: 1.2;
 }
-/* line 173, ../scss/base.scss */
+/* line 176, ../scss/base.scss */
 .message-footer-brand .product-contact-link a:link, .message-footer-brand .product-contact-link a:visited, .message-footer-brand .product-contact-link a:hover, .message-footer-brand .product-contact-link a:active {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-/* line 180, ../scss/base.scss */
+/* line 183, ../scss/base.scss */
 .message-footer-legal {
   background-color: #776f67;
   color: #FFFFFF;
 }
-/* line 183, ../scss/base.scss */
+/* line 186, ../scss/base.scss */
 .message-footer-legal a {
   color: #FFFFFF;
 }
 
 /* type theme-color */
-/* line 189, ../scss/base.scss */
+/* line 192, ../scss/base.scss */
 body {
   color: #776f67;
 }
 
-/* line 192, ../scss/base.scss */
+/* line 195, ../scss/base.scss */
 .section-title {
   color: #16799a;
 }
@@ -604,17 +611,17 @@ body {
 /* @media only screen and (max-width: 480px) { */
 @media (max-width: 600px) {
   /* mobile-specific CSS styles go here */
-  /* line 200, ../scss/base.scss */
+  /* line 203, ../scss/base.scss */
   table[class="message-layout"], .message-layout {
     width: 98% !important;
   }
 }
-/* line 204, ../scss/base.scss */
+/* line 207, ../scss/base.scss */
 .message-container .brand-logo.top-header-tr {
   height: 15px;
 }
 
-/* line 207, ../scss/base.scss */
+/* line 210, ../scss/base.scss */
 .message-container .brand-message-type.bottom-header-tr {
   height: 10px;
 }
@@ -719,44 +726,43 @@ body {
 }
 /* line 70, ../scss/subscription.scss */
 .message-container tbody .message-body-content td td .button {
-  padding: 6px 31px;
   color: #ffffff;
   display: block;
 }
-/* line 79, ../scss/subscription.scss */
+/* line 78, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block td .border-block {
   margin: 0 0 0 2px;
   padding: 0 0 0 8px;
 }
-/* line 83, ../scss/subscription.scss */
+/* line 82, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block td .border-block .commentary-block img {
   float: left;
 }
-/* line 90, ../scss/subscription.scss */
+/* line 89, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block.green-block .border-block {
   border-left: 4px solid #77c68c;
 }
-/* line 95, ../scss/subscription.scss */
+/* line 94, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block.yellow-block .border-block {
   border-left: 4px solid #F2B723;
 }
-/* line 100, ../scss/subscription.scss */
+/* line 99, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block.blue-block .border-block {
   border-left: 4px solid #1E7998;
 }
-/* line 105, ../scss/subscription.scss */
+/* line 104, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block.red-block .border-block {
   border-left: 4px solid #1E7998;
 }
 
-/* line 113, ../scss/subscription.scss */
+/* line 112, ../scss/subscription.scss */
 .learn-more-table tr td {
   padding: 6px 31px;
   color: #ffffff;
   display: block;
 }
 
-/* line 118, ../scss/subscription.scss */
+/* line 117, ../scss/subscription.scss */
 .learn-more-table tr td a {
   border-radius: 5px;
   text-decoration: none;
@@ -764,7 +770,7 @@ body {
   font-family: 'DIN-Regular', sans-serif;
 }
 
-/* line 124, ../scss/subscription.scss */
+/* line 123, ../scss/subscription.scss */
 h2.title-message-green-block {
   font-family: 'DIN-Regular', sans-serif;
   margin: 0 0 11px;
@@ -774,7 +780,7 @@ h2.title-message-green-block {
   color: #6ab480;
 }
 
-/* line 132, ../scss/subscription.scss */
+/* line 131, ../scss/subscription.scss */
 h2.title-message-blue-block {
   font-family: 'DIN-Regular', sans-serif;
   margin: 0 0 11px;
@@ -784,7 +790,7 @@ h2.title-message-blue-block {
   color: #1E7998;
 }
 
-/* line 140, ../scss/subscription.scss */
+/* line 139, ../scss/subscription.scss */
 h2.title-message-red-block {
   font-family: 'DIN-Regular', sans-serif;
   margin: 0 0 11px;
@@ -794,7 +800,7 @@ h2.title-message-red-block {
   color: #1E7998;
 }
 
-/* line 148, ../scss/subscription.scss */
+/* line 147, ../scss/subscription.scss */
 h2.title-message-yellow-block {
   font-family: 'DIN-Regular', sans-serif;
   margin: 0 0 11px;
@@ -804,7 +810,7 @@ h2.title-message-yellow-block {
   color: #F2B723;
 }
 
-/* line 156, ../scss/subscription.scss */
+/* line 155, ../scss/subscription.scss */
 h3.title-border-block {
   text-transform: none;
   font-family: Arial;
@@ -815,7 +821,7 @@ h3.title-border-block {
   margin: 0 0 4px;
 }
 
-/* line 165, ../scss/subscription.scss */
+/* line 164, ../scss/subscription.scss */
 span.text-under-title {
   font-family: Arial, sans-serif;
   font-size: 11px;
@@ -824,53 +830,53 @@ span.text-under-title {
   margin: 0 0 12px;
 }
 
-/* line 172, ../scss/subscription.scss */
+/* line 171, ../scss/subscription.scss */
 .message-body-td {
   padding: 20px 0 0;
 }
 
-/* line 175, ../scss/subscription.scss */
+/* line 174, ../scss/subscription.scss */
 .message-body-content-td {
   border: 2px solid #E6E7E8;
   padding: 20px;
 }
 
-/* line 179, ../scss/subscription.scss */
+/* line 178, ../scss/subscription.scss */
 .message-content-block-td {
   padding: 0 0 20px;
 }
 
-/* line 182, ../scss/subscription.scss */
+/* line 181, ../scss/subscription.scss */
 .message-content-block-img {
   padding: 19px 15px 14px 17px;
 }
 
-/* line 185, ../scss/subscription.scss */
+/* line 184, ../scss/subscription.scss */
 .learn-more-table {
   border-radius: 5px;
 }
 
-/* line 188, ../scss/subscription.scss */
+/* line 187, ../scss/subscription.scss */
 .block-wrap {
   padding: 0 0 21px;
 }
 
-/* line 191, ../scss/subscription.scss */
+/* line 190, ../scss/subscription.scss */
 .block-wrap-comm {
   padding: 0 5px 5px 11px;
 }
 
-/* line 194, ../scss/subscription.scss */
+/* line 193, ../scss/subscription.scss */
 .edit-block-el {
   padding: 13px 30px 10px 0;
 }
-/* line 196, ../scss/subscription.scss */
+/* line 195, ../scss/subscription.scss */
 .edit-block-el h3 {
   font-size: 22px;
   font-family: 'DIN-Regular', sans-serif;
   margin: 0;
 }
-/* line 201, ../scss/subscription.scss */
+/* line 200, ../scss/subscription.scss */
 .edit-block-el p {
   font-family: 'DIN-Regular', sans-serif;
   font-size: 14px;
@@ -879,17 +885,17 @@ span.text-under-title {
   text-align: left;
 }
 
-/* line 209, ../scss/subscription.scss */
+/* line 208, ../scss/subscription.scss */
 .deily-block-wrapp {
-  padding: 20px;
+  padding: 20px 0 0;
 }
 
-/* line 212, ../scss/subscription.scss */
+/* line 211, ../scss/subscription.scss */
 .footer-brand-content-td {
   padding: 20px 0;
 }
 
-/* line 216, ../scss/subscription.scss */
+/* line 215, ../scss/subscription.scss */
 .commentary-by-table span {
   font-family: Arial;
   font-size: 11px;
@@ -899,7 +905,7 @@ span.text-under-title {
   font-style: italic;
   line-height: 10px;
 }
-/* line 225, ../scss/subscription.scss */
+/* line 224, ../scss/subscription.scss */
 .commentary-by-table p {
   font-family: Arial;
   font-size: 11px;
@@ -908,62 +914,78 @@ span.text-under-title {
   padding: 0;
 }
 
-/* line 233, ../scss/subscription.scss */
+/* line 232, ../scss/subscription.scss */
 .wrapp-title {
   padding: 0 0 17px;
 }
 
 @media (max-width: 600px) {
-  /* line 237, ../scss/subscription.scss */
+  /* line 236, ../scss/subscription.scss */
   .brand-logo {
     width: 100%;
     text-align: center;
   }
 
-  /* line 238, ../scss/subscription.scss */
-  .brand-message-type {
+  /* line 237, ../scss/subscription.scss */
+  .editorial-board-block {
     width: 100%;
+  }
+
+  /* line 238, ../scss/subscription.scss */
+  .learn-more-table {
+    border-radius: 5px 5px 5px 5px;
     text-align: center;
+    width: 100%;
   }
 
   /* line 239, ../scss/subscription.scss */
-  .editorial-board-img {
+  .brand-message-type {
     width: 100%;
     text-align: center;
   }
 
   /* line 240, ../scss/subscription.scss */
-  .editorial-board-img td {
+  .editorial-board-img {
+    width: 100%;
     text-align: center;
   }
 
   /* line 241, ../scss/subscription.scss */
-  .editorial-board-block .hero-title {
+  .editorial-board-img td {
     text-align: center;
   }
 
   /* line 242, ../scss/subscription.scss */
+  .editorial-board-block .hero-title {
+    text-align: center;
+  }
+
+  /* line 243, ../scss/subscription.scss */
   .edit-block-el {
     padding: 0;
   }
 
-  /* line 243, ../scss/subscription.scss */
+  /* line 244, ../scss/subscription.scss */
   .message-header .message-layout {
     text-align: center;
   }
 
-  /* line 245, ../scss/subscription.scss */
+  /* line 246, ../scss/subscription.scss */
   .message-type,
   .brand-message-type {
     text-align: center;
   }
 
-  /* line 246, ../scss/subscription.scss */
+  /* line 247, ../scss/subscription.scss */
   .mobile .module-hero {
     text-align: center;
   }
-}
 
+  /* line 248, ../scss/subscription.scss */
+  .brand-message-type td {
+    text-align: center;
+  }
+}
 
 </style>
 </head>
@@ -984,7 +1006,7 @@ span.text-under-title {
 								</table>
 								<table class="brand-message-type" align="right" cellspacing="0" cellpadding="0" border="0">
 									<tr>
-										<td>
+										<td align="right">
 											<span class="message-type">Specific newsletter <br>and we need to say more</span>
 										</td>
 									</tr>
@@ -1011,7 +1033,7 @@ span.text-under-title {
 		</thead>
         <tbody>
 			<tr class="message-body">
-			  <td align="left" class="message-body-td" bgcolor="#ffffff">
+			  <td align="left" class="message-body-td">
 				<table class="message-layout message-body-content" width="588" align="center" cellspacing="0" cellpadding="0">
 					<tbody>
 						<tr class="pc">
@@ -1019,9 +1041,9 @@ span.text-under-title {
 								<table class="message-content-block" cellspacing="0" cellpadding="0" border="0">
 									<tr>
 										<td align="left" class="message-content-block-td" bgcolor="#ffffff">
-											<table class="module-hero" bgcolor="transparent" cellspacing="0" cellpadding="0" border="0">
+											<table class="module-hero" bgcolor="transparent" cellspacing="0" cellpadding="0" border="0" width="100%">
 												<tr>
-													<td  align="left" valign="top" width="588"  bgcolor="#E6E7E8">
+													<td  align="left" valign="top"  bgcolor="#E6E7E8">
 														<table class="editorial-board-img" cellspacing="0" cellpadding="0" border="0" align="left" width="145">
 															<tr>
 																<td  align="left"  class="message-content-block-img" valign="top">
@@ -1054,7 +1076,7 @@ span.text-under-title {
 											<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 												<tr>
 													<td align="left" bgcolor="#ffffff">
-														<table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+														<table class="module-hero" cellspacing="0" cellpadding="0" border="0" width="100%">
 															<tr>
 																<td valign="top" align="left" bgcolor="#ffffff">
 																	<table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1120,7 +1142,7 @@ span.text-under-title {
 									<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 										<tr>
 											<td align="left" bgcolor="#ffffff">
-												<table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+												<table class="module-hero" cellspacing="0" cellpadding="0" border="0"  width="100%">
 													<tr>
 														<td valign="top" align="left" bgcolor="#ffffff">
 															<table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1189,12 +1211,12 @@ span.text-under-title {
 			</td>
 		</tr>
 	<tr class="message-body">
-		<td align="left" class="deily-block-wrapp" bgcolor="#ffffff">
+		<td align="left" class="deily-block-wrapp">
 			<table class="message-layout message-body-content"width="588" cellspacing="0" cellpadding="0" border="0" align="center">
               <tbody>
 				<tr>
-					<td class="message-body-content-td" align="left" >
-					<table>
+					<td class="message-body-content-td" align="left" bgcolor="#FFFFFF">
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
 				    <tr>
 						<td align="left" bgcolor="#ffffff" class="wrapp-title"><h1>Daily Digest Channel</h1></td>
 				    </tr>
@@ -1203,7 +1225,7 @@ span.text-under-title {
 						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 						  <tr>
 							<td align="left" bgcolor="#ffffff">
-							  <table class="module-hero" cellspacing="0" cellspacing="0" cellpadding="0" border="0">
+							  <table class="module-hero" cellspacing="0" cellspacing="0" cellpadding="0" border="0" width="100%">
 								<tr>
 								  <td valign="top" align="left" bgcolor="#ffffff">
 									<table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1267,7 +1289,7 @@ span.text-under-title {
 						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 						  <tr>
 							<td align="left" bgcolor="#ffffff">
-							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0" width="100%">
 								<tr>
 								  <td valign="top" align="left" bgcolor="#ffffff">
 									<table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1333,7 +1355,7 @@ span.text-under-title {
 						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 						  <tr>
 							<td align="left" bgcolor="#ffffff">
-							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0" width="100%">
 								<tr>
 								  <td valign="top" align="left" bgcolor="#ffffff">
 									<table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1445,7 +1467,7 @@ span.text-under-title {
 						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 						  <tr>
 							<td align="left" bgcolor="#ffffff">
-							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0" width="100%">
 								<tr>
 								  <td valign="top" align="left" bgcolor="#ffffff">
 								  <table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1488,7 +1510,7 @@ span.text-under-title {
 						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 						  <tr>
 							<td align="left" bgcolor="#ffffff">
-							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0" width="100%">
 								<tr>
 								  <td valign="top" align="left" bgcolor="#ffffff">
 								    <table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1531,7 +1553,7 @@ span.text-under-title {
 						<table class="message-content-block color-block" cellspacing="0" cellpadding="0" border="0">
 						  <tr>
 							<td align="left" bgcolor="#ffffff">
-							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0">
+							  <table class="module-hero" cellspacing="0" cellpadding="0" border="0" width="100%">
 								<tr>
 								  <td valign="top" align="left" bgcolor="#ffffff">							    
 								  <table cellspacing="0" cellpadding="0" border="0" align="left" class="img-with-title">
@@ -1577,14 +1599,14 @@ span.text-under-title {
           </td>
         </tr><!--/.message-body-->
         <tr class="message-utility">
-          <td align="left" bgcolor="#ffffff">
+          <td align="left">
             <table width="588" align="center" class="message-layout" cellspacing="0" cellpadding="0" border="0">
               <tr>
-                <td align="left" bgcolor="#ffffff">
+                <td align="left">
                   <table class="module message-user-pref" cellspacing="0" cellpadding="0" border="0">
 					<tbody>
 						<tr>
-							<td class="message-recip-disclosure" align="left" bgcolor="#ffffff">
+							<td class="message-recip-disclosure" align="center">
 								<small>You're receiving this newsletter because you signed up at <a href="http://www.practiceupdate.com">PracticeUpdate.com</a></small>
 							</td>
 						</tr>

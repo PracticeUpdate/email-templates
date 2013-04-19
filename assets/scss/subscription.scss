@@ -68,7 +68,6 @@ body {border:none;}
 				td{
 					vertical-align: top;
 					.button {
-						padding: 6px 31px;
 						color:#ffffff;
 						display:block;
 					}
@@ -207,7 +206,7 @@ span.text-under-title {
 	}
 }
 .deily-block-wrapp {
-	padding:20px;
+	padding:20px 0 0;
 }
 .footer-brand-content-td {
 	padding:20px 0 ;
@@ -235,6 +234,8 @@ span.text-under-title {
 }
 @media (max-width: 600px) {
 	.brand-logo {width:100%;text-align:center;}
+	.editorial-board-block {width:100%;}	
+	.learn-more-table {border-radius: 5px 5px 5px 5px;text-align: center;width: 100%;}
 	.brand-message-type {width:100%;text-align:center;}
 	.editorial-board-img {width:100%;text-align:center;}
 	.editorial-board-img td{text-align:center;}
@@ -244,4 +245,5 @@ span.text-under-title {
 	.message-type,
 	.brand-message-type	{text-align: center;}
 	.mobile .module-hero {text-align: center;}
+	.brand-message-type td {text-align:center;}
 }
