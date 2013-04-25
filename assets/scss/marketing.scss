@@ -1,6 +1,5 @@
-@import "base";
 
-body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
+body {border:none; font-family: sans-serif; }
 .message-container {
 	.brand-logo {
 		padding: 15px 0 10px;
@@ -11,6 +10,8 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 	.brand-message-type {
 		td{
 			padding:15px 0 10px ;
+			vertical-align:bottom;
+			height:79px;
 		}
 	}
 	.message-layout {
@@ -18,7 +19,11 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 			display:none;
 		}
 		.title-page {
-			padding: 33px 0 2px ;
+			padding: 16px 0 2px;
+			h1 {
+				line-height:38px;
+				text-align:left;
+			}
 		}
 		.sub-title-page {
 			padding: 0 0 24px ;
@@ -26,7 +31,7 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 	}
 	.message-banner {
 		h1 {
-			font-family: 'Lucida Sans Unicode', sans-serif;
+			font-family: sans-serif;
 			color:#ffffff;
 			margin:0 ;
 			font-size:38px;
@@ -46,7 +51,7 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 	tbody {
 		.message-body-content {
 			td {
-				font-family:'Lucida Sans Unicode', sans-serif; 
+				font-family: sans-serif; 
 				&.message-layout {
 					background-color: #FFFFFF; 
 					border: 1px solid #F2F3F3;
@@ -65,11 +70,18 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 }					
 .no-margin {
 	margin:0;
-}																			
+}			
+.message-body-td {
+	padding:20px 0 0 ;
+}
+.message-body-content-td {
+	border: 2px solid #E6E7E8 ;
+	padding:20px ;
+}																
 .no-padding {
 	padding:0;
 	margin:0;
-	font-family:'Lucida Sans Unicode', sans-serif; 
+	font-family: sans-serif; 
 	font-size:14px;
 }
 .three-blocks table td.no-padding {
@@ -82,7 +94,7 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 .advertsement-title{
   font-size: 8px;
   background: #aca198;
-  font-family: 'Lucida Sans Unicode', sans-serif;
+  font-family: sans-serif;
   color: #fff;
   margin:0;
   text-transform: uppercase;
@@ -94,7 +106,7 @@ body {border:none; font-family:'Lucida Sans Unicode', sans-serif; }
 	font-size: 24px;
 	text-transform: uppercase;
 	color: #fff;
-	font-family: 'Lucida Sans Unicode', sans-serif;
+	font-family: sans-serif;
 	text-align: center;
 	line-height: 24px;
 }
@@ -111,7 +123,7 @@ p{
 	font-family: Arial;
 }
 .border-wrapp {
-	padding:20px;
+	padding:0 0 20px;
 }
 .hero-title {
 	text-transform: none;
@@ -133,7 +145,7 @@ p{
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
 	display: block;
-    font-family: 'DIN-Regular',sans-serif;
+    font-family: sans-serif;
     text-decoration: none;
 }
 .message-content-block-img {
@@ -174,7 +186,21 @@ p{
 .three-blocks td{
 	font-size:14px;
 }
+.legal-address small {
+	color:#ffffff;
+}
+.product-contact-link-list .divider {
+	color:#ffffff;
+}
+.message-recip-actions .divider {
+	color: #776F67;
+}
+.product-contact-link-list {
+	padding:5px 0;
+}
 @media (max-width: 600px) {
+	.message-container .message-layout .title-page h1 {font-size:28px;}
+	.message-container .message-banner h2 {font-size:18px;}
 	.message-header .message-layout {text-align:center;}	
 	.message-type,
 	.brand-message-type	{text-align: center;clear: both;}
@@ -201,4 +227,11 @@ p{
 	.module-img {width:100%;}
 	.module-img td{text-align:center;}
 	.learn-more-table {width:100%;text-align:center;}
+	.footer-logo {width:100%;}
+	.product-contact {text-align:center;}
+	.product-contact table{width:100%}
+	.product-contact table td{text-align:center;}
+	.message-footer-brand .product-contact-link-list{text-align:center;}
+	.social-button {width:100%;}
+	.social-button table{width:200px;}
 }
