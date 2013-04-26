@@ -247,6 +247,13 @@ span.text-under-title {
 .product-contact-link-list {
 	padding:5px 0;
 }
+.message-type,
+.message-user-pref a,
+.message-footer-brand a,
+small,
+.message-container .message-banner h2 {
+	font-family: sans-serif;
+}
 @media (max-width: 600px) {
 	.message-container .message-layout .title-page h1 {font-size:28px;}
 	.message-container .message-banner h2 {font-size:18px;}
