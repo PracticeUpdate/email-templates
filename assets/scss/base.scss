@@ -208,7 +208,26 @@ body{
   height:10px;
 }
 /*
-
+.advertisement-img {
+	img {
+		width:100%;
+	}
+}
+.advertisement-title{
+	font-size: 8px;
+	background: #aca198;
+	font-family: sans-serif;
+	color: #ffffff;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+	text-transform: uppercase;
+	padding-top:0;
+	padding-right:0;
+	padding-bottom:0;
+	padding-left:12px;
+}
 @media (max-width: 600px) {
 	.message-container .brand-logo {float: left;text-align: center;width: 100%;	}
 	.message-container .brand-message-type {float: left;text-align: center;width: 100%;	}

@@ -623,7 +623,26 @@ body {
 }
 
 /*
-
+.advertisement-img {
+	img {
+		width:100%;
+	}
+}
+.advertisement-title{
+	font-size: 8px;
+	background: #aca198;
+	font-family: sans-serif;
+	color: #ffffff;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+	text-transform: uppercase;
+	padding-top:0;
+	padding-right:0;
+	padding-bottom:0;
+	padding-left:12px;
+}
 @media (max-width: 600px) {
 	.message-container .brand-logo {float: left;text-align: center;width: 100%;	}
 	.message-container .brand-message-type {float: left;text-align: center;width: 100%;	}
@@ -649,231 +668,308 @@ body {
   table[id=wrapper] .heading { font-size:14px !important; font-weight:bold !important; }
 }
 */
-/* line 2, ../scss/subscription.scss */
+/* line 1, ../scss/subscription.scss */
 body {
   border: none;
 }
 
-/* line 4, ../scss/subscription.scss */
-.message-container .brand-logo {
-  padding: 15px 0 10px;
+/* line 2, ../scss/subscription.scss */
+a {
+  text-decoration: none;
 }
+
 /* line 6, ../scss/subscription.scss */
-.message-container .brand-logo td {
-  padding: 17px 0 10px;
+.message-container .brand-logo {
+  padding-top: 15px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
 }
 /* line 11, ../scss/subscription.scss */
+.message-container .brand-logo td {
+  padding-top: 17px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+/* line 19, ../scss/subscription.scss */
 .message-container .brand-message-type td {
-  padding: 28px 0 10px;
+  padding-top: 28px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
   vertical-align: bottom;
 }
-/* line 17, ../scss/subscription.scss */
+/* line 28, ../scss/subscription.scss */
 .message-container .message-layout.mobile {
   display: none;
 }
-/* line 20, ../scss/subscription.scss */
+/* line 31, ../scss/subscription.scss */
 .message-container .message-layout .title-page {
-  padding: 16px 0 2px;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 2px;
+  padding-left: 0;
 }
-/* line 22, ../scss/subscription.scss */
+/* line 36, ../scss/subscription.scss */
 .message-container .message-layout .title-page h1 {
   line-height: 38px;
   text-align: left;
 }
-/* line 27, ../scss/subscription.scss */
+/* line 41, ../scss/subscription.scss */
 .message-container .message-layout .sub-title-page {
-  padding: 0 0 24px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 24px;
+  padding-left: 0;
 }
-/* line 32, ../scss/subscription.scss */
+/* line 49, ../scss/subscription.scss */
 .message-container .message-banner h1 {
   font-family: sans-serif;
   color: #ffffff;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   font-size: 38px;
 }
-/* line 38, ../scss/subscription.scss */
+/* line 58, ../scss/subscription.scss */
 .message-container .message-banner h2 {
   color: #ffffff;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   font-size: 20px;
 }
-/* line 45, ../scss/subscription.scss */
+/* line 68, ../scss/subscription.scss */
 .message-container .message-banner-border td {
   display: block;
   height: 10px;
 }
-/* line 53, ../scss/subscription.scss */
-.message-container tbody .message-body-content .advertsement-img p {
+/* line 76, ../scss/subscription.scss */
+.message-container tbody .message-body-content .advertisement-img p {
   font-size: 8px;
   background: #aca198;
   font-family: sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 0 0 0 12px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 12px;
 }
-/* line 61, ../scss/subscription.scss */
-.message-container tbody .message-body-content .advertsement-img img {
+/* line 87, ../scss/subscription.scss */
+.message-container tbody .message-body-content .advertisement-img img {
   width: 100%;
 }
-/* line 66, ../scss/subscription.scss */
+/* line 92, ../scss/subscription.scss */
 .message-container tbody .message-body-content td h1 {
   font-size: 30px;
   color: #776F67;
   font-family: Arial;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
-/* line 72, ../scss/subscription.scss */
+/* line 101, ../scss/subscription.scss */
 .message-container tbody .message-body-content td td {
   vertical-align: top;
 }
-/* line 74, ../scss/subscription.scss */
+/* line 103, ../scss/subscription.scss */
 .message-container tbody .message-body-content td td .button {
   color: #ffffff;
   display: block;
 }
-/* line 84, ../scss/subscription.scss */
+/* line 113, ../scss/subscription.scss */
 .message-container tbody .message-body-content .color-block td .border-block .commentary-block img {
   float: left;
 }
-/* line 91, ../scss/subscription.scss */
-.message-container tbody .message-body-content .color-block.green-block .border-block {
-  border-left: 4px solid #77c68c;
-}
-/* line 96, ../scss/subscription.scss */
-.message-container tbody .message-body-content .color-block.yellow-block .border-block {
-  border-left: 4px solid #F2B723;
-}
-/* line 101, ../scss/subscription.scss */
-.message-container tbody .message-body-content .color-block.blue-block .border-block {
-  border-left: 4px solid #1E7998;
-}
-/* line 106, ../scss/subscription.scss */
-.message-container tbody .message-body-content .color-block.red-block .border-block {
-  border-left: 4px solid #1E7998;
-}
 
-/* line 114, ../scss/subscription.scss */
+/* line 123, ../scss/subscription.scss */
 .learn-more-table tr td {
-  padding: 6px 31px;
+  padding-top: 6px;
+  padding-right: 31px;
+  padding-bottom: 6px;
+  padding-left: 31px;
   color: #ffffff;
   display: block;
 }
 
-/* line 119, ../scss/subscription.scss */
+/* line 131, ../scss/subscription.scss */
 .learn-more-table tr td a {
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   text-decoration: none;
   color: #ffffff;
   font-family: sans-serif;
 }
 
-/* line 125, ../scss/subscription.scss */
+/* line 140, ../scss/subscription.scss */
 h2.title-message-green-block {
   font-family: sans-serif;
-  margin: 0 0 11px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 11px;
+  margin-left: 0;
   font-size: 17px;
   font-weight: normal;
   text-transform: uppercase;
   color: #6ab480;
 }
 
-/* line 133, ../scss/subscription.scss */
+/* line 151, ../scss/subscription.scss */
 h2.title-message-blue-block {
   font-family: sans-serif;
-  margin: 0 0 11px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 11px;
+  margin-left: 0;
   font-size: 17px;
   font-weight: normal;
   text-transform: uppercase;
   color: #1E7998;
 }
 
-/* line 141, ../scss/subscription.scss */
+/* line 162, ../scss/subscription.scss */
 h2.title-message-red-block {
   font-family: sans-serif;
-  margin: 0 0 11px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 11px;
+  margin-left: 0;
   font-size: 17px;
   font-weight: normal;
   text-transform: uppercase;
   color: #1E7998;
 }
 
-/* line 149, ../scss/subscription.scss */
+/* line 173, ../scss/subscription.scss */
+h2.title-message-purple-block {
+  font-family: sans-serif;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 11px;
+  margin-left: 0;
+  font-size: 17px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #a26369;
+}
+
+/* line 184, ../scss/subscription.scss */
 h2.title-message-yellow-block {
   font-family: sans-serif;
-  margin: 0 0 11px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 11px;
+  margin-left: 0;
   font-size: 17px;
   font-weight: normal;
   text-transform: uppercase;
   color: #F2B723;
 }
 
-/* line 157, ../scss/subscription.scss */
+/* line 195, ../scss/subscription.scss */
 h3.title-border-block {
   text-transform: none;
   font-family: Arial;
   font-size: 18px;
   font-weight: normal;
-  color: #dc6751;
-  line-height: 16px;
-  margin: 0 0 4px;
+  color: #dc6651;
+  line-height: px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4px;
+  margin-left: 0;
 }
 
-/* line 166, ../scss/subscription.scss */
+/* line 207, ../scss/subscription.scss */
 span.text-under-title {
   font-family: Arial, sans-serif;
   font-size: 11px;
   color: #777067;
   display: block;
-  padding: 0 0 12px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 12px;
+  padding-left: 0;
 }
 
-/* line 173, ../scss/subscription.scss */
+/* line 217, ../scss/subscription.scss */
 .message-body-td {
-  padding: 20px 0 0;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
-/* line 176, ../scss/subscription.scss */
+/* line 223, ../scss/subscription.scss */
 .message-body-content-td {
   border: 2px solid #E6E7E8;
-  padding: 20px;
+  padding-top: 20px;
 }
 
-/* line 180, ../scss/subscription.scss */
+/* line 227, ../scss/subscription.scss */
 .message-content-block-td {
-  padding: 0 0 20px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
-/* line 183, ../scss/subscription.scss */
+/* line 233, ../scss/subscription.scss */
 .message-content-block-img {
-  padding: 19px 15px 14px 17px;
+  padding-top: 19px;
+  padding-right: 19px;
+  padding-bottom: 19px;
+  padding-left: 19px;
 }
 
-/* line 186, ../scss/subscription.scss */
+/* line 239, ../scss/subscription.scss */
 .learn-more-table {
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-/* line 189, ../scss/subscription.scss */
+/* line 245, ../scss/subscription.scss */
 .block-wrap {
-  padding: 0 0 21px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 21px;
+  padding-left: 20px;
 }
 
-/* line 192, ../scss/subscription.scss */
+/* line 251, ../scss/subscription.scss */
 .block-wrap-comm {
-  padding: 0 5px 5px 11px;
+  padding-top: 0;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 11px;
 }
 
-/* line 195, ../scss/subscription.scss */
+/* line 257, ../scss/subscription.scss */
 .edit-block-el {
-  padding: 13px 30px 10px 0;
+  padding-top: 15px;
+  padding-right: 19px;
+  padding-bottom: 19px;
+  padding-left: 0;
 }
-/* line 197, ../scss/subscription.scss */
+/* line 262, ../scss/subscription.scss */
 .edit-block-el h3 {
   font-size: 22px;
   font-family: sans-serif;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
-/* line 202, ../scss/subscription.scss */
+/* line 270, ../scss/subscription.scss */
 .edit-block-el p {
   font-family: sans-serif;
   font-size: 14px;
@@ -882,61 +978,86 @@ span.text-under-title {
   text-align: left;
 }
 
-/* line 210, ../scss/subscription.scss */
+/* line 278, ../scss/subscription.scss */
 .deily-block-wrapp {
-  padding: 20px 0 0;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
-/* line 213, ../scss/subscription.scss */
+/* line 284, ../scss/subscription.scss */
 .footer-brand-content-td {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
 }
 
-/* line 217, ../scss/subscription.scss */
+/* line 291, ../scss/subscription.scss */
 .commentary-by-table span {
   font-family: Arial;
   font-size: 11px;
   color: #A7A9AC;
   display: block;
-  margin: 0 0 1px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1px;
+  margin-left: 0;
   font-style: italic;
   line-height: 10px;
 }
-/* line 226, ../scss/subscription.scss */
+/* line 303, ../scss/subscription.scss */
 .commentary-by-table p {
   font-family: Arial;
   font-size: 11px;
   color: #777067;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
-/* line 234, ../scss/subscription.scss */
+/* line 317, ../scss/subscription.scss */
 .wrapp-title {
-  padding: 0 0 17px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
 }
 
-/* line 237, ../scss/subscription.scss */
+/* line 326, ../scss/subscription.scss */
 .legal-address small {
   color: #ffffff;
 }
 
-/* line 240, ../scss/subscription.scss */
+/* line 329, ../scss/subscription.scss */
 .product-contact-link-list .divider {
   color: #ffffff;
 }
 
-/* line 243, ../scss/subscription.scss */
+/* line 332, ../scss/subscription.scss */
 .message-recip-actions .divider {
   color: #776F67;
 }
 
-/* line 246, ../scss/subscription.scss */
+/* line 335, ../scss/subscription.scss */
 .product-contact-link-list {
-  padding: 5px 0;
+  padding-top: 5px;
+  padding-right: 0;
+  padding-bottom: 5px;
+  padding-left: 0;
 }
 
-/* line 253, ../scss/subscription.scss */
+/* line 345, ../scss/subscription.scss */
 .message-type,
 .message-user-pref a,
 .message-footer-brand a,
@@ -945,124 +1066,134 @@ small,
   font-family: sans-serif;
 }
 
+/* line 348, ../scss/subscription.scss */
+.border-header {
+  height: 13px;
+}
+
 @media (max-width: 600px) {
-  /* line 257, ../scss/subscription.scss */
+  /* line 352, ../scss/subscription.scss */
   .message-container .message-layout .title-page h1 {
     font-size: 28px;
   }
 
-  /* line 258, ../scss/subscription.scss */
+  /* line 353, ../scss/subscription.scss */
   .message-container .message-banner h2 {
     font-size: 18px;
   }
 
-  /* line 259, ../scss/subscription.scss */
+  /* line 354, ../scss/subscription.scss */
   .brand-logo {
     width: 100%;
     text-align: center;
   }
 
-  /* line 260, ../scss/subscription.scss */
+  /* line 355, ../scss/subscription.scss */
   .editorial-board-block {
     width: 100%;
   }
 
-  /* line 261, ../scss/subscription.scss */
+  /* line 356, ../scss/subscription.scss */
   .learn-more-table {
-    border-radius: 5px 5px 5px 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     text-align: center;
     width: 100%;
   }
 
-  /* line 262, ../scss/subscription.scss */
+  /* line 357, ../scss/subscription.scss */
   .brand-message-type {
     width: 100%;
     text-align: center;
   }
 
-  /* line 263, ../scss/subscription.scss */
+  /* line 358, ../scss/subscription.scss */
   .editorial-board-img {
     width: 100%;
     text-align: center;
   }
 
-  /* line 264, ../scss/subscription.scss */
+  /* line 359, ../scss/subscription.scss */
   .editorial-board-img td {
     text-align: center;
   }
 
-  /* line 265, ../scss/subscription.scss */
+  /* line 360, ../scss/subscription.scss */
   .editorial-board-block .hero-title {
     text-align: center;
   }
 
-  /* line 266, ../scss/subscription.scss */
+  /* line 361, ../scss/subscription.scss */
   .edit-block-el {
-    padding: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 
-  /* line 267, ../scss/subscription.scss */
+  /* line 362, ../scss/subscription.scss */
   .message-header .message-layout {
     text-align: center;
   }
 
-  /* line 269, ../scss/subscription.scss */
+  /* line 364, ../scss/subscription.scss */
   .message-type,
   .brand-message-type {
     text-align: center;
   }
 
-  /* line 270, ../scss/subscription.scss */
+  /* line 365, ../scss/subscription.scss */
   .mobile .module-hero {
     text-align: center;
   }
 
-  /* line 271, ../scss/subscription.scss */
+  /* line 366, ../scss/subscription.scss */
   .brand-message-type td {
     text-align: center;
   }
 
-  /* line 272, ../scss/subscription.scss */
+  /* line 367, ../scss/subscription.scss */
   .footer-logo {
     width: 100%;
   }
 
-  /* line 273, ../scss/subscription.scss */
+  /* line 368, ../scss/subscription.scss */
   .product-contact {
     text-align: center;
   }
 
-  /* line 274, ../scss/subscription.scss */
+  /* line 369, ../scss/subscription.scss */
   .product-contact table {
     width: 100%;
   }
 
-  /* line 275, ../scss/subscription.scss */
+  /* line 370, ../scss/subscription.scss */
   .product-contact table td {
     text-align: center;
   }
 
-  /* line 276, ../scss/subscription.scss */
+  /* line 371, ../scss/subscription.scss */
   .message-footer-brand .product-contact-link-list {
     text-align: center;
   }
 
-  /* line 277, ../scss/subscription.scss */
+  /* line 372, ../scss/subscription.scss */
   .social-button {
     width: 100%;
   }
 
-  /* line 278, ../scss/subscription.scss */
+  /* line 373, ../scss/subscription.scss */
   .social-button table {
     width: 200px;
   }
 
-  /* line 279, ../scss/subscription.scss */
+  /* line 374, ../scss/subscription.scss */
   .add-banner img {
     width: 100%;
   }
 }
-
 </style>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -1076,7 +1207,7 @@ small,
 								<table class="brand-logo" align="left" cellspacing="0" cellpadding="0" border="0">
 									<tr>
 										<td>
-											<img src="<!-- @path logo.jpg -->" width="221px" height="49px" alt="PracticeUpdate logo" />
+											<img src="<!-- @path logo-practiceupdate.jpg -->" width="213px" height="49px" alt="PracticeUpdate logo" />
 										</td>
 									</tr>
 								</table>
@@ -1106,6 +1237,9 @@ small,
 					</table><!--/.message-layout-->
 				</td>
 			</tr><!--/.message-banner-->
+			<tr>
+				<td align="left" class="border-header" bgcolor="#dc6650"></td>
+			</tr>
 		</thead>
         <tbody>
 			<tr class="message-body">
@@ -1115,17 +1249,6 @@ small,
 						<tr class="pc">
 							<td align="left" class="message-body-content-td" bgcolor="#ffffff">
 								<table class="message-content-block" cellspacing="0" cellpadding="0" border="0">
-									<tr>
-										<td class="message-content-block-td">
-											<table class="editorial-board-img add-banner" cellspacing="0" cellpadding="0" border="0" align="left">
-												<tr>
-													<td  align="left" valign="top">
-														<img src="http://placehold.it/728x90" width="548" alt="" />
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
 									<tr>
 										<td align="left" class="message-content-block-td" bgcolor="#ffffff">
 											<table class="module-hero" bgcolor="transparent" cellspacing="0" cellpadding="0" border="0" width="100%">
